@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-PT"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#00311f","on-surface-variant":"#bccac0","tertiary":"#ffb95f","on-error-container":"#ffdad6","surface":"#051424","surface-bright":"#2c3a4c","tertiary-container":"#ca8100","inverse-on-surface":"#233143","secondary":"#ffb3b6","on-primary-fixed-variant":"#005137","outline":"#87948b","secondary-fixed":"#ffdada","surface-tint":"#68dba9","tertiary-fixed":"#ffddb8","background":"#051424","on-tertiary-fixed":"#2a1700","tertiary-fixed-dim":"#ffb95f","surface-container-highest":"#273647","secondary-container":"#cc003c","inverse-primary":"#006c4a","on-tertiary-container":"#3e2400","secondary-fixed-dim":"#ffb3b6","error":"#ffb4ab","on-surface":"#d4e4fa","on-background":"#d4e4fa","error-container":"#93000a","on-secondary-fixed-variant":"#920028","surface-container-low":"#0d1c2d","primary-container":"#25a475","on-tertiary":"#472a00","on-tertiary-fixed-variant":"#653e00","inverse-surface":"#d4e4fa","primary":"#68dba9","on-secondary-fixed":"#40000c","surface-container-lowest":"#010f1f","on-primary-fixed":"#002114","outline-variant":"#3d4a42","on-primary":"#003825","on-secondary":"#68001a","primary-fixed-dim":"#68dba9","surface-variant":"#273647","surface-dim":"#051424","surface-container-high":"#1c2b3c","surface-container":"#122131","primary-fixed":"#85f8c4","on-error":"#690005","on-secondary-container":"#ffdcdc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-4xl":"6rem","space-xs":"0.5rem","container-max":"1440px","space-2xs":"0.25rem","space-3xl":"4rem","space-sm":"0.75rem","space-lg":"1.5rem","space-xl":"2rem","gutter-mobile":"1rem","carousel-peek":"3rem","space-2xl":"3rem","space-md":"1rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><a class="flex items-center gap-space-sm" data-path="inicio" href="#"><img alt="LusoPlay TV Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwZGtpFbVGzvXAXq86j8Fg38YBipIbpY6YFapytdGOfGfWac324RyG_-4V1rJqXnBZzEzGULJVKUsGlflef2Kk5xp9gmFfrBsS_OL62vkdLMSoTRcCagenUSxiOD0gWzoGPLXmuFspunnkU5jBDqHXJOdlykpiUeo5kk1Zm3IbmYl2Kq5PZS3L9yyge0Cn2V1TKzZYJuQjRg5AUnBTMaoWEmNHn7cONarCeFMVnoP40phhxB9Ow-ZQX64"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight hidden sm:inline-block">LusoPlay<span class="text-primary">TV</span></span></a></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="text-on-surface bg-surface-container-high rounded-lg"><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Início</a><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="funcionalidades" href="#">Funcionalidades</a><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="precos" href="#">Preços</a><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="blog" href="#">Blog</a><a aria-current="page" class="px-space-sm py-space-xs font-label-md transition-colors text-on-surface bg-surface-container-high rounded-lg" data-path="suporte" href="#">Suporte</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="iniciar-sessao" href="#">Iniciar Sessão</a><a class="relative inline-flex items-center justify-center px-space-md py-space-xs rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container hover:bg-primary transition-all duration-200 shadow-[0_0_20px_rgba(37,164,117,0.35)]" data-path="teste-gratis" href="#">Começar Teste Grátis</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARy_Bm1J5WMJBUs6a3HDQqqakpGw1anJ4TXn_9a4oHb5dUWCFMhYIZAk00uKvE7RLwucCD87iuFADEqbtkCPOCG38JHP-oOKbC5y3K3l9SOag9VBQ2BsEBEAp7UdhJnLLcmTLV8JFF6ExTnFoaO54Wj65AKbDbNR4BHUruZjpXyzOKFcz8D1t1uqR9LaXKnyFh7p5oIumuZ5PN9IP_WhFnvk2Jcy2eJsGFKL0aMoLzh-1OS2Um3DCP"/></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Decorative Ambient Glows -->
+<div class="relative w-full overflow-hidden">
+<div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-b from-primary/10 via-primary-container/5 to-transparent blur-3xl opacity-70"></div>
+<div class="pointer-events-none absolute top-96 -right-32 w-96 h-96 bg-secondary-container/10 blur-3xl rounded-full"></div>
+<div class="pointer-events-none absolute top-[1100px] -left-32 w-96 h-96 bg-primary/10 blur-3xl rounded-full"></div>
+<!-- 1. Support Header & Live Search Bar -->
+<section class="relative z-10 pt-space-2xl pb-space-3xl px-gutter-mobile lg:px-gutter-desktop max-w-[1440px] mx-auto w-full">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-space-md">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-container-high shadow-md">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Apoio ao Cliente 24/7 • Centro de Ajuda</span>
+<span class="hidden sm:inline-block text-outline-variant">•</span>
+<span class="hidden sm:inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">bolt</span> 
+            Tempo Médio: &lt; 5 min
+          </span>
+</div>
+<!-- Section Title & Lead -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+          Como podemos <span class="text-primary">ajudar?</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Encontre respostas rápidas a dúvidas frequentes, consulte os nossos manuais de configuração ou fale em direto com a nossa equipa especializada em Portugal.
+        </p>
+<!-- Prominent Search Box -->
+<div class="w-full max-w-2xl pt-space-sm">
+<div class="relative flex items-center bg-surface-container-highest/90 backdrop-blur-md rounded-xl shadow-xl transition-all duration-300 focus-within:shadow-[0_0_28px_rgba(104,219,169,0.25)] focus-within:bg-surface-container-high">
+<div class="pl-space-md flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="w-full py-space-md pl-space-sm pr-space-md bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="supportSearchInput" placeholder="Escreva a sua dúvida (ex: configurar Smart TV, MB WAY, código Xtream)..." type="text"/>
+<div class="pr-space-sm hidden sm:flex items-center">
+<span class="px-space-xs py-1 rounded bg-surface-container text-outline font-label-sm text-label-sm">ESC</span>
+</div>
+</div>
+<!-- Quick Search Tags -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs pt-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-outline">Mais procurados:</span>
+<button class="px-space-xs py-1 rounded bg-surface-container-high text-on-surface hover:text-primary hover:bg-surface-bright transition-colors font-body-sm text-body-sm" onclick="filterFaq('Smart TV')" type="button">
+              Samsung Tizen
+            </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-high text-on-surface hover:text-primary hover:bg-surface-bright transition-colors font-body-sm text-body-sm" onclick="filterFaq('LG webOS')" type="button">
+              LG webOS
+            </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-high text-on-surface hover:text-primary hover:bg-surface-bright transition-colors font-body-sm text-body-sm" onclick="filterFaq('MB WAY')" type="button">
+              MB WAY
+            </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-high text-on-surface hover:text-primary hover:bg-surface-bright transition-colors font-body-sm text-body-sm" onclick="filterFaq('Buffering')" type="button">
+              Buffering / Travar
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. High-Impact Quick Contact Channels -->
+<section class="relative z-10 pb-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-[1440px] mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: WhatsApp (Featured Priority Channel) -->
+<div class="relative flex flex-col justify-between p-space-xl rounded-2xl bg-surface-container-high shadow-xl overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="absolute top-0 right-0 w-36 h-36 bg-primary/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary/10 font-label-sm text-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Em Direto Agora
+              </span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Suporte por WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Fale diretamente com um técnico em português de Portugal. Resposta média em menos de 5 minutos, ideal para apoio imediato em configuração.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/80 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Todos os dias: 08h00 – 00h00</span>
+<span class="font-body-sm text-body-sm text-outline">Inclui fins de semana e feriados em Portugal</span>
+</div>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container hover:bg-primary transition-all duration-200 shadow-[0_0_20px_rgba(37,164,117,0.35)]" href="https://wa.me/351910000000?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20o%20LusoPlay%20TV" rel="noopener noreferrer" target="_blank">
+<span>Iniciar Conversa no WhatsApp</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Email & Support Ticket -->
+<div class="relative flex flex-col justify-between p-space-xl rounded-2xl bg-surface-container-high shadow-xl overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-bright flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-2xl">mark_email_unread</span>
+</div>
+<span class="px-space-xs py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Casos Complexos
+              </span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Apoio por Email &amp; Ticket</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Envie-nos uma mensagem detalhada para questões de conta, faturas com NIF português, migração de dispositivos ou dúvidas técnicas avançadas.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/80 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">Canal direto prioritário</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-semibold">suporte@lusoplay.tv</span>
+</div>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-surface-bright text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="#contacto-formulario">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+<span>Abrir Pedido de Apoio</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Free 24h Trial Activation -->
+<div class="relative flex flex-col justify-between p-space-xl rounded-2xl bg-surface-container-high shadow-xl overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-2xl"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">stars</span>
+</div>
+<span class="px-space-xs py-1 rounded bg-tertiary/20 text-tertiary font-label-sm text-label-sm">
+                Sem Fidelização
+              </span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ativação de Teste Grátis 24h</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Ainda não é cliente? Peça a sua linha de teste gratuita sem necessidade de cartão de crédito e receba o acesso no seu email ou telemóvel em minutos.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/80 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Acesso completo a canais 4K</span>
+<span class="font-body-sm text-body-sm text-outline">Desporto, Cinema e Séries sem compromisso</span>
+</div>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-md" data-path="teste-gratis" href="#">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+<span>Pedir Teste Rápido</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Telemetry / Health Indicator & Stats -->
+<section class="relative z-10 pb-space-3xl px-gutter-mobile lg:px-gutter-desktop max-w-[1440px] mx-auto w-full">
+<div class="bg-surface-container rounded-2xl p-space-lg lg:p-space-xl shadow-lg">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-3xl">dns</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Estado da Rede &amp; Servidores: 100% Operacional</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nós de distribuição em Lisboa e Porto com latência média de 4.2ms.</p>
+</div>
+</div>
+<!-- Micro Sparkline SVG & Telemetry Data -->
+<div class="flex items-center gap-space-xl flex-wrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">Uptime (30 dias)</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">99.98%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">Velocidade Mín.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">15 Mbps (4K)</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<div class="hidden sm:flex flex-col items-start">
+<span class="font-label-sm text-label-sm uppercase text-outline mb-1">Estabilidade</span>
+<svg class="text-primary overflow-visible" fill="none" height="28" viewbox="0 0 120 28" width="120">
+<path d="M0 20 L20 18 L40 22 L60 14 L80 15 L100 8 L120 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="120" cy="10" fill="currentColor" r="3.5"></circle>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FAQ Categories Accordion & Guides -->
+<section class="relative z-10 pb-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-[1440px] mx-auto w-full">
+<div class="space-y-space-md text-left mb-space-2xl">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">library_books</span>
+          Base de Conhecimento
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Perguntas Frequentes &amp; Tutoriais de Apoio
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Selecione o tópico que procura. Criámos tutoriais passo-a-passo detalhados para cada televisor e sistema operativo.
+        </p>
+</div>
+<!-- FAQ Category Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="faqAccordionContainer">
+<!-- Categoria 1: Configuração & Instalação -->
+<div class="faq-category-card bg-surface-container rounded-2xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm pb-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">tv_remote</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Configuração &amp; Instalação</h3>
+<span class="font-body-sm text-body-sm text-outline">Smart TV, Box Android, Fire Stick e Apple TV</span>
+</div>
+</div>
+<!-- Accordion Items -->
+<div class="space-y-space-xs pt-space-xs">
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como instalar em Smart TV Samsung (Tizen)?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Basta aceder à loja de aplicações (Samsung Smart Hub), pesquisar por aplicações compatíveis como <strong class="text-on-surface">IBO Player Pro, Nanomid ou IPTV Smarters Pro</strong> e inserir as credenciais Xtream API enviadas no seu email após a ativação. O nosso suporte disponibiliza o guia visual em PDF.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como instalar em Smart TV LG (webOS)?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Na LG Content Store, faça o download de aplicações recomendadas para webOS (ex: <strong class="text-on-surface">IBO Player, DuplexPlay ou Tivimate</strong>). Fornecemos a ativação da app e a sincronização automática da grelha de canais em direto sem precisar de ligar cabos adicionais.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Configurar na Xiaomi Mi Box ou Amazon Fire TV Stick?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Aceda à Google Play Store ou use a ferramenta Downloader na Fire TV. Recomendamos o <strong class="text-on-surface">TiviMate IPTV Player</strong> para a melhor experiência de navegação idêntica a uma box de operadora tradicional (com Guia TV EPG e zapping instantâneo).
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como carregar listas M3U e códigos Xtream API?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Os dados de acesso incluem: 1. URL do Servidor com proteção DNS nacional; 2. Nome de Utilizador; 3. Palavra-passe. Introduza estes 3 campos no menu "Xtream Codes API" da sua aplicação para descarregar canais e VOD automaticamente.
+                </div>
+</details>
+</div>
+</div>
+</div>
+<!-- Categoria 2: Problemas de Reprodução & Buffering -->
+<div class="faq-category-card bg-surface-container rounded-2xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm pb-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Reprodução &amp; Buffering</h3>
+<span class="font-body-sm text-body-sm text-outline">Otimização de rede e qualidade de transmissão</span>
+</div>
+</div>
+<!-- Accordion Items -->
+<div class="space-y-space-xs pt-space-xs">
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>O que fazer se a transmissão parar ou encravar?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Recomendamos reiniciar o router da sua operadora (MEO, NOS, Vodafone) durante 30 segundos para renovar os túneis de rota. Se estiver por Wi-Fi de 2.4GHz, tente mudar para a banda de 5GHz ou ligar por cabo de rede Ethernet (RJ45).
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como alterar o leitor interno (VLC / ExoPlayer)?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Nas definições (Settings) da aplicação, vá até "Player Settings" / "Stream Format" e selecione "Hardware Decoder" ou alterne entre o leitor nativo e o VLC. Isto resolve 95% de dessincronizações de áudio ou ecrã negro em canais 4K 50fps.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Recomendações de velocidade de internet mínima?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Para transmissões Full HD estáveis são necessários pelo menos 10 Mbps dedicados. Para eventos desportivos em direto 4K UHD com 50/60 fps recomendamos uma ligação estável com velocidade de pelo menos 25 Mbps e 'ping' inferior a 25ms.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como reiniciar a ligação com os servidores LusoPlay?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  No ecrã principal da sua app de televisão, selecione "Atualizar Lista" ou "Refresh Playlists". Caso o problema persista, contacte o suporte WhatsApp com o seu código de cliente para transferirmos a rota para um nó redundante.
+                </div>
+</details>
+</div>
+</div>
+</div>
+<!-- Categoria 3: Conta, Pagamentos & MB WAY -->
+<div class="faq-category-card bg-surface-container rounded-2xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm pb-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Conta, Pagamentos &amp; MB WAY</h3>
+<span class="font-body-sm text-body-sm text-outline">Métodos de pagamento 100% seguros em Portugal</span>
+</div>
+</div>
+<!-- Accordion Items -->
+<div class="space-y-space-xs pt-space-xs">
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como pagar com MB WAY com ativação imediata?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Basta selecionar a opção MB WAY no checkout e inserir o seu número de telemóvel português (+351). Irá receber de imediato uma notificação na app MB WAY do seu telemóvel para confirmar a transação. O serviço ativa automaticamente em segundos.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Pagamento por Multibanco (Entidade e Referência)?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Geramos uma referência Multibanco oficial com Entidade, Referência e Montante exato, válida durante 48 horas. Poderá liquidar através do homebanking de qualquer banco português ou em qualquer caixa Multibanco da rede SIBS.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como renovar a minha subscrição existente?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Não é necessário configurar novamente as suas televisões. Basta solicitar a renovação com o seu nome de utilizador ou email. Os dias adicionais serão somados à sua validade atual sem interrupção de sinal.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Política de reembolso e cancelamento?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Oferecemos 7 dias de garantia incondicional de satisfação. Se o serviço não funcionar de acordo com os padrões prometidos no seu equipamento, devolvemos a totalidade do valor pago via transferência bancária ou MB WAY.
+                </div>
+</details>
+</div>
+</div>
+</div>
+<!-- Categoria 4: Lista de Canais & Conteúdo VOD -->
+<div class="faq-category-card bg-surface-container rounded-2xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm pb-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">movie</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Canais &amp; Filmes VOD</h3>
+<span class="font-body-sm text-body-sm text-outline">Grelha nacional, EPG e catálogo de estreias</span>
+</div>
+</div>
+<!-- Accordion Items -->
+<div class="space-y-space-xs pt-space-xs">
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Como solicitar a adição de um canal ou filme?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Os subscritores têm acesso ao canal de pedidos da comunidade. Se existir um filme, documentário ou temporada recente que pretenda ver, informe o apoio técnico que a nossa equipa procede à importação no prazo de 24 a 48 horas.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Atualização do Guia de Programação TV (EPG)?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  O nosso Guia EPG é sincronizado automaticamente a cada 6 horas com os horários oficiais de emissão dos operadores em Portugal (RTP, SIC, TVI, canais desportivos e temáticos infantis).
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Ativar ou desativar canais de adultos (controlo parental)?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Por defeito, todas as linhas vêm com PIN de segurança de 4 dígitos ou com a categoria de adultos completamente bloqueada. Pode solicitar a remoção permanente ou alteração do PIN a qualquer momento no suporte.
+                </div>
+</details>
+<details class="group bg-surface-container-high rounded-xl overflow-hidden transition-all duration-200">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none text-on-surface font-label-md text-label-md hover:text-primary transition-colors">
+<span>Legendas em português nos filmes e séries?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-primary transition-transform">expand_more</span>
+</summary>
+<div class="px-space-sm pb-space-sm text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+                  Mais de 95% do nosso catálogo de Video-on-Demand inclui legendagem nativa em Português de Portugal (PT-PT) ou dobragem oficial para cinema em animação infantil.
+                </div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Interactive Contact Form Section -->
+<section class="relative z-10 pb-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-[1440px] mx-auto w-full" id="contacto-formulario">
+<div class="bg-surface-container-low rounded-3xl p-space-lg lg:p-space-3xl shadow-2xl relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left Col: Trust Points & Context -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div class="space-y-space-xs">
+<span class="px-space-xs py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider inline-block">
+                Apoio Personalizado
+              </span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+                Não encontrou o que procurava?
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Preencha o formulário com a sua questão. Um técnico de apoio dedicado analisará o seu pedido e responderá em menos de 15 minutos úteis.
+              </p>
+</div>
+<!-- Trust Badge Box -->
+<div class="p-space-md rounded-2xl bg-surface-container space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Atendimento 100% em Português</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Sem respostas automáticas genéricas de robôs. Acompanhamos passo a passo até ter o seu serviço a correr perfeitamente na sua televisão.
+              </p>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-sm">lock</span>
+<span>Dados encriptados sob o Regulamento Geral de Proteção de Dados (RGPD).</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-sm">schedule_send</span>
+<span>Prioridade atribuída automaticamente a pedidos com telemóvel/WhatsApp.</span>
+</div>
+</div>
+<!-- Visual Decorative Trust Card -->
+<div class="hidden lg:block relative rounded-2xl overflow-hidden h-44 bg-surface-container-high shadow-lg">
+<div class="bg-cover bg-center w-full h-full" data-alt="A modern, high-tech customer support room with dual-monitor setups displaying glowing network metrics and customer tickets, shot with cinematic mood, deep obsidian shadows, and soft jade-green lighting highlights, representing reliable European streaming operations." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHLu19_2Oz48dphMWbwLTxYRlyMksQGAYIqWWV6m19w6hpiGk3lDUntNdy2UVeaL8-GsFCOEgsdybddR4AmRQXmfwI0fgE9YSjIgmhTLtg_fVLscjWj-vxq74ZkkNK937SsZlkR2xSTNHGq0r_MB8xiMbmwnVZjNtc-ExEelkKDPBuAZ-e_F7I4OfBX-NQ4aL111tAp7wCfEc_a2fH2ssRfEPfLBe1lyW_23wCHCYl57XJjjqQdk9O')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent p-space-md flex flex-col justify-end">
+<span class="font-label-sm text-label-sm text-primary uppercase">Infraestrutura Nacional</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Monitorização ativa 24 horas por dia em território nacional</span>
+</div>
+</div>
+</div>
+<!-- Right Col: Contact Form -->
+<div class="lg:col-span-7 bg-surface-container rounded-2xl p-space-lg lg:p-space-xl shadow-xl">
+<form class="space-y-space-md" id="supportContactForm" onsubmit="handleSupportSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Nome Completo -->
+<div class="space-y-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="contactName">Nome Completo <span class="text-primary">*</span></label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-bright transition-all" id="contactName" placeholder="ex: João Silva" required="" type="text"/>
+</div>
+<!-- Email de Contacto -->
+<div class="space-y-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="contactEmail">Email de Contacto <span class="text-primary">*</span></label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-bright transition-all" id="contactEmail" placeholder="joao.silva@exemplo.pt" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Número de WhatsApp -->
+<div class="space-y-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="contactPhone">Número WhatsApp <span class="text-outline text-body-sm">(Opcional / Mais Rápido)</span></label>
+<div class="relative flex items-center">
+<span class="absolute left-space-sm text-outline font-label-md text-label-md">🇵🇹 +351</span>
+<input class="w-full pl-20 pr-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-bright transition-all" id="contactPhone" placeholder="912 345 678" type="tel"/>
+</div>
+</div>
+<!-- Dispositivo Utilizado -->
+<div class="space-y-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="contactDevice">Dispositivo Principal <span class="text-primary">*</span></label>
+<select class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-bright transition-all cursor-pointer" id="contactDevice" required="">
+<option class="text-outline" disabled="" selected="" value="">Selecione o seu aparelho</option>
+<option class="bg-surface-container-high" value="samsung">Smart TV Samsung (Tizen)</option>
+<option class="bg-surface-container-high" value="lg">Smart TV LG (webOS)</option>
+<option class="bg-surface-container-high" value="firestick">Amazon Fire TV Stick</option>
+<option class="bg-surface-container-high" value="androidtv">Box Android / Xiaomi Mi Box</option>
+<option class="bg-surface-container-high" value="appletv">Apple TV / iPhone / iPad</option>
+<option class="bg-surface-container-high" value="computador">Computador (Windows / Mac / Web)</option>
+<option class="bg-surface-container-high" value="outro">Outro equipamento</option>
+</select>
+</div>
+</div>
+<!-- Tipo de Pedido -->
+<div class="space-y-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="contactType">Tipo de Pedido <span class="text-primary">*</span></label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-1">
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm cursor-pointer hover:bg-surface-bright transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<input checked="" class="hidden" name="supportType" type="radio" value="tecnica"/>
+<span class="material-symbols-outlined text-sm">build</span>
+<span>Dúvida Técnica</span>
+</label>
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm cursor-pointer hover:bg-surface-bright transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<input class="hidden" name="supportType" type="radio" value="faturacao"/>
+<span class="material-symbols-outlined text-sm">receipt_long</span>
+<span>Faturação</span>
+</label>
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm cursor-pointer hover:bg-surface-bright transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<input class="hidden" name="supportType" type="radio" value="teste"/>
+<span class="material-symbols-outlined text-sm">timer</span>
+<span>Teste Grátis</span>
+</label>
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm cursor-pointer hover:bg-surface-bright transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary-container">
+<input class="hidden" name="supportType" type="radio" value="outro"/>
+<span class="material-symbols-outlined text-sm">help</span>
+<span>Outro Assunto</span>
+</label>
+</div>
+</div>
+<!-- Mensagem detalhada -->
+<div class="space-y-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="contactMessage">Mensagem Detalhada <span class="text-primary">*</span></label>
+<textarea class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-bright transition-all" id="contactMessage" placeholder="Descreva o que está a acontecer com o máximo de pormenor (nome da aplicação, mensagem de erro ou código recebido)..." required="" rows="4"></textarea>
+</div>
+<!-- Form Feedback Message (hidden by default) -->
+<div class="hidden p-space-sm rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-space-sm" id="formSuccessMessage">
+<span class="material-symbols-outlined">task_alt</span>
+<span>Obrigado! O seu pedido foi registado com sucesso. Verifique o seu email ou WhatsApp dentro de instantes.</span>
+</div>
+<!-- Privacy Notice & Submit Button -->
+<div class="pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<p class="font-body-sm text-body-sm text-outline">
+                  Os seus dados são confidenciais e nunca serão partilhados com terceiros.
+                </p>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-space-sm rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container hover:bg-primary transition-all duration-200 shadow-[0_0_20px_rgba(37,164,117,0.35)] shrink-0" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-lg">send</span>
+<span>Enviar Mensagem para o Suporte</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Reassurance Banner & Satisfaction Pledge -->
+<section class="relative z-10 pb-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-[1440px] mx-auto w-full">
+<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-surface-container-highest via-surface-container to-surface-container-lowest p-space-xl lg:p-space-2xl shadow-xl">
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex items-center gap-space-lg">
+<div class="hidden md:flex w-20 h-20 rounded-2xl bg-primary-container/20 items-center justify-center text-primary shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+</div>
+<div class="space-y-space-2xs text-center md:text-left">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-sm">shield</span>
+                Garantia LusoPlay TV
+              </div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">
+                A sua satisfação é a nossa prioridade número um.
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                Equipa 100% portuguesa pronta para o ajudar em qualquer etapa da instalação. Do primeiro teste à televisão da sua sala de estar, nunca fica sozinho.
+              </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container hover:bg-primary transition-all duration-200 shadow-lg" href="https://wa.me/351910000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">forum</span>
+<span>Apoio em Tempo Real</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-xl font-label-md text-label-md bg-surface-bright text-on-surface hover:bg-surface-container-highest transition-all duration-200" data-path="precos" href="#">
+<span>Ver Planos &amp; Preços</span>
+<span class="material-symbols-outlined text-lg">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+    // Live Search Filter for FAQs
+    function setupFaqSearch() {
+      const searchInput = document.getElementById('supportSearchInput');
+      if (!searchInput) return;
+
+      searchInput.addEventListener('input', function(e) {
+        const term = e.target.value.toLowerCase().trim();
+        const detailsList = document.querySelectorAll('#faqAccordionContainer details');
+        
+        detailsList.forEach(function(detail) {
+          const summaryText = detail.querySelector('summary').textContent.toLowerCase();
+          const contentText = detail.querySelector('div').textContent.toLowerCase();
+          
+          if (term === '' || summaryText.includes(term) || contentText.includes(term)) {
+            detail.style.display = '';
+            if (term !== '' && (summaryText.includes(term) || contentText.includes(term))) {
+              detail.open = true;
+            }
+          } else {
+            detail.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Quick tag search trigger
+    window.filterFaq = function(keyword) {
+      const searchInput = document.getElementById('supportSearchInput');
+      if (searchInput) {
+        searchInput.value = keyword;
+        searchInput.dispatchEvent(new Event('input'));
+        searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    };
+
+    // Form Submission Simulation
+    window.handleSupportSubmit = function(e) {
+      e.preventDefault();
+      const submitBtn = document.getElementById('submitBtn');
+      const successMsg = document.getElementById('formSuccessMessage');
+      
+      if (!submitBtn || !successMsg) return;
+
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-70');
+      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-lg">progress_activity</span><span>A enviar pedido...</span>';
+
+      setTimeout(function() {
+        submitBtn.style.display = 'none';
+        successMsg.classList.remove('hidden');
+        document.getElementById('supportContactForm').reset();
+      }, 1200);
+    };
+
+    // ESC key clears search
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const searchInput = document.getElementById('supportSearchInput');
+        if (searchInput && searchInput.value !== '') {
+          searchInput.value = '';
+          searchInput.dispatchEvent(new Event('input'));
+        }
+      }
+    });
+
+    // Initialize search listener
+    setupFaqSearch();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest pt-space-3xl pb-space-2xl"><div class="max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-1 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="LusoPlay TV Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwZGtpFbVGzvXAXq86j8Fg38YBipIbpY6YFapytdGOfGfWac324RyG_-4V1rJqXnBZzEzGULJVKUsGlflef2Kk5xp9gmFfrBsS_OL62vkdLMSoTRcCagenUSxiOD0gWzoGPLXmuFspunnkU5jBDqHXJOdlykpiUeo5kk1Zm3IbmYl2Kq5PZS3L9yyge0Cn2V1TKzZYJuQjRg5AUnBTMaoWEmNHn7cONarCeFMVnoP40phhxB9Ow-ZQX64"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">LusoPlay<span class="text-primary">TV</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">LusoPlay TV — A plataforma de televisão por streaming líder em Portugal. Milhares de canais em direto, filmes e séries em 4K sem fidelização.</p><div class="flex flex-col gap-space-2xs pt-space-xs"><div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-primary">verified_user</span><span>Pagamento 100% Seguro por MB WAY e Multibanco</span></div><div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary"><span class="material-symbols-outlined text-tertiary">workspace_premium</span><span>Garantia de Satisfação</span></div></div></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Produto</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="funcionalidades" href="#">Funcionalidades</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Dispositivos Compatíveis</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Lista de Canais</a></li><li class="hover:text-on-surface transition-colors"><a data-path="teste-gratis" href="#">Teste Grátis de 24h</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Guia de Instalação</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Planos</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="precos" href="#">Subscrição 1 Mês</a></li><li class="hover:text-on-surface transition-colors"><a data-path="precos" href="#">Subscrição 6 Meses</a></li><li class="hover:text-on-surface transition-colors"><a data-path="precos" href="#">Subscrição 12 Meses (Mais Popular)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="precos" href="#">Métodos de Pagamento (MB WAY, Multibanco, Cartão)</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Recursos &amp; Blog</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="blog" href="#">Blog de Notícias</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Guias Smart TV</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Otimização de Wi-Fi</a></li><li class="hover:text-on-surface transition-colors"><a data-path="suporte" href="#">Centro de Ajuda</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Suporte &amp; Legal</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="suporte" href="#">Apoio ao Cliente 24/7</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Suporte WhatsApp</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Termos e Condições</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Política de Privacidade</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Aviso Legal (Livro de Reclamações Online)</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 LusoPlay TV Tecnologias de Streaming Lda. Todos os direitos reservados. Feito com orgulho para o público português 🇵🇹</p><div class="flex items-center gap-space-md font-label-sm text-label-sm"><span class="text-on-surface-variant">Serviço Premium Nacional</span><span class="w-1 h-1 rounded-full bg-surface-variant"></span><span class="text-on-surface-variant">4K Ultra HD • Dolby Atmos</span></div></div></div></footer></body></html>

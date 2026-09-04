@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-obsidian: #040911;
+  --color-charcoal: #0E1726;
+  --color-card-glass: rgba(14, 23, 38, 0.72);
+  
+  --color-emerald-400: #34D399;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  
+  --color-ruby-400: #FB7185;
+  --color-ruby-500: #F43F5E;
+  --color-ruby-600: #E11D48;
+
+  --color-surface: #040911;
+  --color-surface-container-lowest: #02050a;
+  --color-surface-container-low: #08101c;
+  --color-surface-container: #0e1826;
+  --color-surface-container-high: #152234;
+  --color-surface-container-highest: #1d2e44;
+  --color-surface-bright: #253852;
+  --color-primary: #10b981;
+  --color-primary-container: #059669;
+  --color-primary-fixed: #34d399;
+  --color-on-primary: #002b1b;
+  --color-on-primary-container: #e6fff4;
+  --color-secondary: #f43f5e;
+  --color-secondary-container: #be123c;
+  --color-on-secondary-container: #ffe4e6;
+  --color-tertiary: #f59e0b;
+  --color-tertiary-container: #b45309;
+  --color-on-surface: #f1f5f9;
+  --color-on-surface-variant: #94a3b8;
+  --color-outline: #475569;
+  --color-outline-variant: #1e293b;
+
+  /* Font mappings */
+  --font-sans: var(--font-sans), sans-serif;
+  --font-display: var(--font-display), sans-serif;
+
+  --font-headline-xl: var(--font-display), sans-serif;
+  --font-headline-lg: var(--font-display), sans-serif;
+  --font-headline-md: var(--font-display), sans-serif;
+  --font-headline-sm: var(--font-display), sans-serif;
+  --font-display-hero: var(--font-display), sans-serif;
+  
+  --font-body-lg: var(--font-sans), sans-serif;
+  --font-body-md: var(--font-sans), sans-serif;
+  --font-body-sm: var(--font-sans), sans-serif;
+  --font-label-md: var(--font-sans), sans-serif;
+  --font-label-sm: var(--font-sans), sans-serif;
+
+  /* Spacing */
+  --spacing-container-max: 1440px;
+  --spacing-gutter-desktop: 2rem;
+  --spacing-gutter-mobile: 1.25rem;
+
+  --shadow-glow-emerald: 0 0 35px -5px rgba(16, 185, 129, 0.35);
+  --shadow-glow-ruby: 0 0 30px -5px rgba(225, 29, 72, 0.25);
+  --shadow-glass: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+@layer utilities {
+  .glass-border {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .glass-border-light {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .glass-panel {
+    background: rgba(14, 23, 38, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .subtle-mesh {
+    background-image: radial-gradient(circle at 50% -20%, rgba(16, 185, 129, 0.12) 0%, transparent 60%),
+                      radial-gradient(circle at 90% 40%, rgba(225, 29, 72, 0.06) 0%, transparent 50%),
+                      radial-gradient(circle at 10% 70%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
+  }
+  .obsidian-card {
+    background: radial-gradient(120% 120% at 50% 0%, rgba(18, 29, 46, 0.55) 0%, rgba(7, 13, 23, 0.85) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .obsidian-highlight-card {
+    background: radial-gradient(130% 120% at 50% 0%, rgba(16, 185, 129, 0.12) 0%, rgba(10, 24, 34, 0.95) 45%, rgba(4, 9, 17, 0.98) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.38);
+    box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.22), 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+  }
+  .glass-surface {
+    background: rgba(10, 19, 31, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+@theme {
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-3xl: 4rem;
+  --spacing-space-4xl: 6rem;
+  --spacing-carousel-peek: 3rem;
+}
+
+@layer utilities {
+  .text-headline-xl { font-size: 40px; line-height: 48px; letter-spacing: -0.02em; font-weight: 700; }
+  .text-headline-sm { font-size: 18px; line-height: 24px; letter-spacing: -0.005em; font-weight: 600; }
+  .text-headline-lg { font-size: 28px; line-height: 36px; letter-spacing: -0.015em; font-weight: 700; }
+  .text-label-sm { font-size: 11px; line-height: 14px; letter-spacing: 0.06em; font-weight: 700; }
+  .text-body-sm { font-size: 13px; line-height: 20px; letter-spacing: 0.01em; font-weight: 400; }
+  .text-body-lg { font-size: 18px; line-height: 28px; font-weight: 400; }
+  .text-display-hero { font-size: 56px; line-height: 64px; letter-spacing: -0.03em; font-weight: 800; }
+  .text-display-hero-mobile { font-size: 36px; line-height: 44px; letter-spacing: -0.02em; font-weight: 800; }
+  .text-headline-md { font-size: 22px; line-height: 28px; letter-spacing: -0.01em; font-weight: 600; }
+  .text-body-md { font-size: 15px; line-height: 24px; font-weight: 400; }
+  .text-label-md { font-size: 14px; line-height: 18px; letter-spacing: 0.01em; font-weight: 600; }
+  .text-headline-xl-mobile { font-size: 28px; line-height: 36px; letter-spacing: -0.015em; font-weight: 700; }
+}

@@ -1,0 +1,979 @@
+<!DOCTYPE html><html class="dark" lang="pt-PT"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LusoPlay TV — Streaming Premium em Portugal | Teste Grátis 24h</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            obsidian: "#040911",
+            surface: "#070E1A",
+            charcoal: "#0E1726",
+            "card-glass": "rgba(14, 23, 38, 0.72)",
+            emerald: {
+              400: "#34D399",
+              500: "#10B981",
+              600: "#059669",
+              700: "#047857"
+            },
+            ruby: {
+              400: "#FB7185",
+              500: "#F43F5E",
+              600: "#E11D48"
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif']
+          },
+          boxShadow: {
+            'glow-emerald': '0 0 35px -5px rgba(16, 185, 129, 0.35)',
+            'glow-ruby': '0 0 30px -5px rgba(225, 29, 72, 0.25)',
+            'glass': '0 20px 40px -15px rgba(0, 0, 0, 0.6)'
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #040911;
+        color: #F1F5F9;
+        font-family: 'Inter', sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #040911;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1E293B;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+    }
+    .glass-border {
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .glass-border-light {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .glass-panel {
+      background: rgba(14, 23, 38, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .subtle-mesh {
+      background-image: radial-gradient(circle at 50% -20%, rgba(16, 185, 129, 0.12) 0%, transparent 60%),
+                        radial-gradient(circle at 90% 40%, rgba(225, 29, 72, 0.06) 0%, transparent 50%),
+                        radial-gradient(circle at 10% 70%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
+    }
+  </style>
+</head>
+<body class="bg-obsidian text-slate-200 antialiased selection:bg-emerald-500 selection:text-white">
+<!-- TOP BAR NOTIFICATION / TRUST PILL (Optional subtle microbar) -->
+<div class="w-full bg-charcoal/90 border-b border-white/[0.06] text-center py-2 px-4 text-xs font-medium text-slate-300">
+<div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-semibold text-[11px] tracking-wide uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Servidores em Lisboa &amp; Porto
+      </span>
+<span class="hidden sm:inline text-slate-400">•</span>
+<span class="hidden sm:inline text-slate-300">Transmissão 4K nativa com tecnologia Anti-Freeze 9.0 dedicada ao público português.</span>
+</div>
+</div>
+<!-- STICKY MAIN HEADER -->
+<header class="sticky top-0 left-0 right-0 w-full z-50 bg-obsidian/85 backdrop-blur-xl border-b border-white/[0.08]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+<!-- Brand Logo using DataStore IMAGE_15 -->
+<a class="flex items-center gap-3 shrink-0 group focus:outline-none" href="#">
+<div class="h-10 sm:h-11 flex items-center"><img src="https://lh3.googleusercontent.com/aida/AEtjO1UwZGtpFbVGzvXAXq86j8Fg38YBipIbpY6YFapytdGOfGfWac324RyG_-4V1rJqXnBZzEzGULJVKUsGlflef2Kk5xp9gmFfrBsS_OL62vkdLMSoTRcCagenUSxiOD0gWzoGPLXmuFspunnkU5jBDqHXJOdlykpiUeo5kk1Zm3IbmYl2Kq5PZS3L9yyge0Cn2V1TKzZYJuQjRg5AUnBTMaoWEmNHn7cONarCeFMVnoP40phhxB9Ow-ZQX64" alt="LusoPlay TV Logo" class="h-9 w-auto object-contain"></div>
+</a>
+<!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+<a class="px-3.5 py-2 text-sm font-medium text-white hover:text-emerald-400 rounded-lg hover:bg-white/[0.04] transition-colors" href="#hero">Início</a>
+<a class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.04] transition-colors" href="#vantagens">Vantagens</a>
+<a class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.04] transition-colors" href="#dispositivos">Dispositivos</a>
+<a class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.04] transition-colors" href="#planos">Planos &amp; Preços</a>
+<a class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.04] transition-colors" href="#testemunhos">Avaliações</a>
+<a class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.04] transition-colors" href="#faq">FAQ</a>
+</nav>
+<!-- Header CTAs -->
+<div class="flex items-center gap-3 shrink-0">
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#faq">
+<span class="material-symbols-outlined text-[18px] text-emerald-400">headset_mic</span>
+<span class="">Apoio 24/7</span>
+</a>
+<a class="relative group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold font-display text-white bg-emerald-600 hover:bg-emerald-500 shadow-glow-emerald transition-all duration-300 active:scale-[0.98]" href="#planos">
+<span class="">Começar Teste Grátis</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- HERO SECTION -->
+<section class="relative min-h-[calc(100vh-5rem)] flex items-center pt-8 pb-20 overflow-hidden subtle-mesh" id="hero">
+<!-- Ambient Glow Circles -->
+<div class="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-emerald-500/10 rounded-full blur-[140px]"></div>
+<div class="pointer-events-none absolute top-1/2 -right-32 w-[450px] h-[450px] bg-ruby-600/10 rounded-full blur-[160px]"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-7">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/[0.09] shadow-sm backdrop-blur-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ruby-500 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-ruby-500"></span>
+</span>
+<span class="text-xs font-semibold text-slate-200 tracking-wide">Transmissão 4K HDR • Mais de 18.000 Canais &amp; VOD</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[58px] text-white tracking-tight leading-[1.08]">
+              Entretenimento sem limites, <br class="hidden sm:inline">
+<span class="bg-gradient-to-r from-emerald-400 via-emerald-300 to-teal-200 bg-clip-text text-transparent">onde estiver.</span>
+</h1>
+<!-- Subtitle -->
+<p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+              Desfrute da melhor televisão em Portugal com qualidade 4K cristalina, tecnologia Anti-Freeze 9.0 sem quebras em noites de clássico e zero fidelização. Instalação rápida em menos de 5 minutos na sua Smart TV.
+            </p>
+<!-- Main Action Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
+<a class="relative group inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-semibold text-base text-white bg-emerald-600 hover:bg-emerald-500 shadow-glow-emerald transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]" href="#planos">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="">Começar Teste Grátis de 24 Horas</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-display font-medium text-base text-slate-200 bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.1] backdrop-blur-md transition-all" href="#planos">
+<span class="material-symbols-outlined text-[20px] text-slate-400">tune</span>
+<span class="">Ver Planos &amp; Preços</span>
+</a>
+</div>
+<!-- Refined Trust Pillars with Emerald Icons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 pt-2 text-sm text-slate-300 font-medium w-full">
+<div class="flex items-center gap-2.5">
+<div class="w-5 h-5 rounded-full bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="">Ativação imediata em &lt; 5 minutos</span>
+</div>
+<div class="flex items-center gap-2.5">
+<div class="w-5 h-5 rounded-full bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="">Sem fidelização ou surpresas no fim do mês</span>
+</div>
+<div class="flex items-center gap-2.5">
+<div class="w-5 h-5 rounded-full bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="">Compatível com Smart TVs Samsung, LG e Android</span>
+</div>
+<div class="flex items-center gap-2.5">
+<div class="w-5 h-5 rounded-full bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="">Suporte técnico dedicado via WhatsApp em Português</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Ultra-Realistic 4K Streaming Mockup -->
+<div class="lg:col-span-5 relative">
+<!-- Glow backdrop -->
+<div class="absolute -inset-1 bg-gradient-to-r from-emerald-500/25 to-teal-500/20 rounded-3xl blur-2xl opacity-60"></div>
+<!-- TV Glass Frame Container -->
+<div class="relative rounded-2xl bg-charcoal border border-white/[0.12] p-2 sm:p-3 shadow-glass">
+<!-- Screen Aspect Frame -->
+<div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-obsidian">
+<img alt="Benfica vs FC Porto transmissão de futebol em direto em 4K HDR com interface LusoPlay TV" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADQan37UAxNcMghVfHM2jKRaLQiAcNTakrXqbnqCrm1yJaDE69qku2Ip8aZP4e6dubR9A8RjK31MSzllgxrHzJu7mcFLwGqYEGeb3780JiL9XUBCgL0nozPS9k1D1mNYwgXoRRuYyAmPOKiRks89cjoLltRGF68Kcs5NYKfnLMU7-SFTsBWcD563M-7GLN4x9YA-IvsSG-o4ymA9odRj_jlSIpwlAuRpO4astbj3iCZuyDNzRiAUEM">
+<!-- Screen Subtle Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian/95 via-transparent to-black/60 pointer-events-none"></div>
+<!-- Top Streaming HUD Bar -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none z-10">
+<div class="flex items-center gap-2 bg-black/65 backdrop-blur-md px-2.5 py-1 rounded-lg border border-white/10">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ruby-500 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-ruby-500"></span>
+</span>
+<span class="text-[11px] font-bold text-white tracking-wider uppercase">EM DIRETO</span>
+<span class="text-[10px] font-semibold text-slate-300">4K HDR</span>
+</div>
+<div class="flex items-center gap-1.5 bg-black/65 backdrop-blur-md px-2.5 py-1 rounded-lg border border-white/10 text-[11px] font-medium text-emerald-400">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span class="">Anti-Freeze 9.0 • 60 FPS</span>
+</div>
+</div>
+<!-- Bottom Screen Banner -->
+<div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-charcoal/85 backdrop-blur-md border border-white/[0.08] flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-semibold text-white">Benfica vs FC Porto</span>
+<span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Liga Portugal</span>
+</div>
+<p class="text-[11px] text-slate-300 mt-0.5 flex items-center gap-2">
+<span class="">Estádio da Luz</span>
+<span class="text-slate-500">•</span>
+<span class="text-emerald-400">Áudio Dolby 5.1</span>
+</p>
+</div>
+<div class="shrink-0 flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/[0.08] text-[11px] font-medium text-slate-200">
+<span class="material-symbols-outlined text-[14px] text-emerald-400">broadcast_on_personal</span>
+<span class="">Servidor VIP 01</span>
+</div>
+</div>
+</div>
+<!-- Sleek Mockup Bottom Shelf / App Indicators -->
+<div class="pt-2.5 px-2 flex items-center justify-between text-xs text-slate-300 font-medium">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-white text-[11px]">LusoPlay OS Engine</span>
+</div>
+<span class="text-[11px] text-slate-300">Compatível: LG webOS • Samsung Tizen • Android TV</span>
+</div>
+</div>
+<!-- Overlapping Floating Card 1: VOD Badge -->
+<div class="absolute -bottom-6 -left-4 sm:-left-6 w-60 glass-panel p-2.5 rounded-xl shadow-glass flex items-center gap-3 z-20">
+<div class="w-12 h-16 rounded-lg overflow-hidden shrink-0 border border-white/10">
+<img alt="Poster filme VOD em português" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqsbZYsN9Jyg8I1zO43xcaNPMRxHv3QrBJtdIuxm4V3oESn_S2Zy27j0r8eKbLL6bOmI_v-qBUNpaVf5pb-hIhYRUOBt24aQgjIkpzlWfLOTmVc3p79UGv-KFfoRO5NEW_DH7FIS63oZb7khP6KK3FV32ZEfFOiQK1qUcUIMU2sQIS7aztUpuJjn1uSVfSlVAcF9Pkxjgm9QoFUjS5bA06WTnXjxrhaalyafTrxRWSqA14V5iFQ4eR">
+</div>
+<div class="min-w-0">
+<span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400">Estreia Exclusiva</span>
+<p class="text-xs font-semibold text-white truncate">Cinema &amp; Séries VOD</p>
+<p class="text-[11px] text-slate-300">+40.000 Títulos em PT</p>
+</div>
+</div>
+<!-- Overlapping Floating Card 2: Uptime / Channels Badge -->
+<div class="absolute -top-4 -right-2 sm:-right-4 glass-panel px-3.5 py-2 rounded-xl shadow-glass flex items-center gap-2.5 z-20">
+<div class="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<div class="text-xs font-bold text-white">99.9% Estabilidade</div>
+<div class="text-[10px] text-slate-300">Cluster Redundante PT</div>
+</div>
+</div>
+</div>
+</div>
+<!-- HERO STATS STRIP -->
+<div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="glass-panel rounded-2xl p-5 flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div>
+<div class="font-display font-bold text-2xl text-white">+45.000 Clientes</div>
+<div class="text-xs text-slate-300">Em Portugal Continental e Ilhas</div>
+</div>
+</div>
+<div class="glass-panel rounded-2xl p-5 flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[26px]">dns</span>
+</div>
+<div>
+<div class="font-display font-bold text-2xl text-white">0% Buffer em Clássicos</div>
+<div class="text-xs text-slate-300">Tecnologia Anti-Freeze 9.0 proprietária</div>
+</div>
+</div>
+<div class="glass-panel rounded-2xl p-5 flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<div>
+<div class="font-display font-bold text-2xl text-white">&lt; 3 Minutos</div>
+<div class="text-xs text-slate-300">Tempo médio de resposta via WhatsApp</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS / SOCIAL PROOF -->
+<section class="w-full py-20 bg-charcoal/40 border-y border-white/[0.06] relative" id="testemunhos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header with Rating Pill -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Opiniões Reais</span>
+<h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">Aprovado por milhares de portugueses</h2>
+<p class="text-sm sm:text-base text-slate-300 mt-2 max-w-xl">
+              Descubra por que telespectadores de norte a sul trocaram faturas mensais pesadas de 80€ pela liberdade da LusoPlay TV.
+            </p>
+</div>
+<!-- Overall Rating Widget -->
+<div class="glass-panel px-5 py-3 rounded-2xl flex items-center gap-4 self-start md:self-auto shrink-0">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-emerald-400">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[11px] text-slate-300 mt-0.5">+3.420 avaliações verificadas</span>
+</div>
+<div class="border-l border-white/10 pl-4 font-display font-extrabold text-2xl text-white">
+              4.9<span class="text-xs font-normal text-slate-400">/5</span>
+</div>
+</div>
+</div>
+<!-- 4 Testimonial Cards (Lisboa, Porto, Coimbra, Braga) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Review 1: Lisboa -->
+<div class="glass-panel rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/30 transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-emerald-400 text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verificado
+                </span>
+</div>
+<p class="text-sm text-slate-200 leading-relaxed italic">
+                "Qualidade de imagem inacreditável para os jogos de futebol. Não falhou sequer um segundo na final e no dérbi. O teste grátis convenceu-me na primeira hora."
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-white/[0.06] flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center font-display font-bold text-xs text-emerald-400">
+                MF
+              </div>
+<div>
+<div class="font-display font-semibold text-sm text-white">Miguel Ferreira</div>
+<div class="text-xs text-slate-400">Lisboa • Cliente há 14 meses</div>
+</div>
+</div>
+</div>
+<!-- Review 2: Porto -->
+<div class="glass-panel rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/30 transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-emerald-400 text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verificado
+                </span>
+</div>
+<p class="text-sm text-slate-200 leading-relaxed italic">
+                "Instalei na minha Smart TV LG em menos de 3 minutos. O suporte por WhatsApp foi excecional e tirou todas as dúvidas. O catálogo de séries é infinito."
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-white/[0.06] flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center font-display font-bold text-xs text-emerald-400">
+                SR
+              </div>
+<div>
+<div class="font-display font-semibold text-sm text-white">Sofia Ramos</div>
+<div class="text-xs text-slate-400">Porto • Cliente há 9 meses</div>
+</div>
+</div>
+</div>
+<!-- Review 3: Coimbra -->
+<div class="glass-panel rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/30 transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-emerald-400 text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verificado
+                </span>
+</div>
+<p class="text-sm text-slate-200 leading-relaxed italic">
+                "Cancelei a fatura de 78€ que pagava na MEO. Agora tenho muito mais canais de desporto e filmes por uma fração do preço, sem contratos nem fidelizações."
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-white/[0.06] flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center font-display font-bold text-xs text-emerald-400">
+                DC
+              </div>
+<div>
+<div class="font-display font-semibold text-sm text-white">Duarte Carvalho</div>
+<div class="text-xs text-slate-400">Coimbra • Cliente há 6 meses</div>
+</div>
+</div>
+</div>
+<!-- Review 4: Braga -->
+<div class="glass-panel rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/30 transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-emerald-400 text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verificado
+                </span>
+</div>
+<p class="text-sm text-slate-200 leading-relaxed italic">
+                "O guia TV (EPG) de 7 dias funciona lindamente. A minha família vê os desenhos animados com dobragem portuguesa e eu não perco nada de Fórmula 1 e Liga dos Campeões."
+              </p>
+</div>
+<div class="pt-5 mt-4 border-t border-white/[0.06] flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center font-display font-bold text-xs text-emerald-400">
+                AM
+              </div>
+<div>
+<div class="font-display font-semibold text-sm text-white">André Matos</div>
+<div class="text-xs text-slate-400">Braga • Cliente há 2 anos</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE US / COMPARISON & FEATURES -->
+<section class="w-full py-24 relative" id="vantagens">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Tecnologia Europeia de Vanguarda</span>
+<h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">
+            Porquê escolher a LusoPlay TV?
+          </h2>
+<p class="text-sm sm:text-base text-slate-300 mt-3">
+            Infraestrutura de alta disponibilidade com servidores em Lisboa e Porto, concebida especificamente para garantir que nunca perde um golo nem espera por carregamentos.
+          </p>
+</div>
+<!-- 6 Minimalist Feature Grid with Custom SVG / Material Badges -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+<!-- Card 1 -->
+<div class="glass-panel p-7 rounded-2xl hover:border-emerald-500/40 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">sports_soccer</span>
+</div>
+<h3 class="font-display font-bold text-lg text-white mb-2">Desporto em Direto em 4K e 60 FPS</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              Acesso total às principais ligas europeias, Liga Portugal, Premier League, Champions League, Fórmula 1 e MotoGP com fluidez cristalina sem atrasos no sinal.
+            </p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-7 rounded-2xl hover:border-emerald-500/40 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">video_library</span>
+</div>
+<h3 class="font-display font-bold text-lg text-white mb-2">+40.000 Filmes &amp; Séries On-Demand</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              Catálogo cinematográfico atualizado semanalmente com estreias de bilheteira, temporadas completas e opções de áudio ou legendas em português de Portugal.
+            </p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-7 rounded-2xl hover:border-emerald-500/40 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">speed</span>
+</div>
+<h3 class="font-display font-bold text-lg text-white mb-2">Anti-Freeze 9.0 Inteligente</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              Balanceamento automático de carga por inteligência de rede. Mesmo quando 200.000 pessoas assistem ao mesmo clássico, o seu sinal permanece 100% estável.
+            </p>
+</div>
+<!-- Card 4 -->
+<div class="glass-panel p-7 rounded-2xl hover:border-emerald-500/40 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">calendar_today</span>
+</div>
+<h3 class="font-display font-bold text-lg text-white mb-2">Guia TV (EPG) de 7 Dias</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              Consulte a grelha de programação detalhada das principais emissoras nacionais e internacionais com informação completa sobre cada transmissão.
+            </p>
+</div>
+<!-- Card 5 -->
+<div class="glass-panel p-7 rounded-2xl hover:border-emerald-500/40 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">devices</span>
+</div>
+<h3 class="font-display font-bold text-lg text-white mb-2">Sem Boxes ou Equipamento Alugado</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              Utilize a televisão que já tem na sala. Basta instalar a aplicação oficial na sua Samsung, LG, Android TV ou Apple TV em poucos cliques.
+            </p>
+</div>
+<!-- Card 6 -->
+<div class="glass-panel p-7 rounded-2xl hover:border-emerald-500/40 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<h3 class="font-display font-bold text-lg text-white mb-2">Apoio Técnico Humano 24/7</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              Sem bots robóticos nem linhas de valor acrescentado. Os nossos especialistas ajudam-no via WhatsApp com linguagem simples e resposta imediata.
+            </p>
+</div>
+</div>
+<!-- Sleek Comparison Matrix Table -->
+<div class="glass-panel rounded-3xl p-6 sm:p-8 overflow-x-auto">
+<div class="mb-6">
+<h3 class="font-display font-bold text-xl text-white">Comparativo direto com as operadoras tradicionais</h3>
+<p class="text-xs sm:text-sm text-slate-300 mt-1">Veja quanto poupa e o que ganha ao mudar para a LusoPlay TV.</p>
+</div>
+<table class="w-full text-left border-collapse min-w-[620px]">
+<thead>
+<tr class="border-b border-white/[0.08]">
+<th class="pb-4 font-display font-bold text-sm text-slate-300">Funcionalidade / Serviço</th>
+<th class="pb-4 font-display font-bold text-sm text-emerald-400 text-center bg-white/[0.03] rounded-t-xl px-4">LusoPlay TV</th>
+<th class="pb-4 font-display font-semibold text-sm text-slate-400 text-center px-4">Operadoras Convencionais em PT</th>
+</tr>
+</thead>
+<tbody class="text-sm divide-y divide-white/[0.06]">
+<tr>
+<td class="py-4 font-medium text-white">Canais de Desporto Premium (Nacionais &amp; Internacionais)</td>
+<td class="py-4 text-center bg-white/[0.03] px-4 font-semibold text-emerald-400">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">check_circle</span> Incluídos em 4K
+                  </span>
+</td>
+<td class="py-4 text-center text-slate-400 px-4">+35€ a 55€ extra por mês</td>
+</tr>
+<tr>
+<td class="py-4 font-medium text-white">Contrato de Fidelização Obrigatória</td>
+<td class="py-4 text-center bg-white/[0.03] px-4 font-semibold text-emerald-400">
+                  Zero (0 Meses)
+                </td>
+<td class="py-4 text-center text-ruby-400 px-4 font-semibold">24 Meses com penalizações pesadas</td>
+</tr>
+<tr>
+<td class="py-4 font-medium text-white">Aluguer Mensal de Boxes Adicionais</td>
+<td class="py-4 text-center bg-white/[0.03] px-4 font-semibold text-emerald-400">
+                  Grátis (Usa a app na sua TV)
+                </td>
+<td class="py-4 text-center text-slate-400 px-4">+3,50€ a 6€ / mês por TV</td>
+</tr>
+<tr>
+<td class="py-4 font-medium text-white">Filmes Recentes e Séries On-Demand</td>
+<td class="py-4 text-center bg-white/[0.03] px-4 font-semibold text-emerald-400">
+                  +40.000 títulos incluídos
+                </td>
+<td class="py-4 text-center text-slate-400 px-4">Cobrança de videoclube individual</td>
+</tr>
+<tr>
+<td class="py-4 font-medium text-white">Ativação e Envio de Credenciais</td>
+<td class="py-4 text-center bg-white/[0.03] px-4 font-semibold text-emerald-400 rounded-b-xl">
+                  Em 2 a 5 minutos online
+                </td>
+<td class="py-4 text-center text-slate-400 px-4">Espera de técnico (3 a 8 dias úteis)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- DEVICE COMPATIBILITY ECOSYSTEM -->
+<section class="w-full py-20 bg-charcoal/30 border-y border-white/[0.06]" id="dispositivos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Compatibilidade Total</span>
+<h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">
+          Funciona com todos os seus aparelhos
+        </h2>
+<p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto mt-2 mb-12">
+          Não precisa de comprar novos dispositivos. Disponibilizamos manuais passo a passo adaptados a cada sistema operativo.
+        </p>
+<!-- 6 Devices Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:border-emerald-500/40 transition-all">
+<span class="material-symbols-outlined text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform">tv</span>
+<div class="font-display font-bold text-sm text-white">Smart TV</div>
+<div class="text-[11px] text-slate-300 mt-0.5">Samsung • LG</div>
+</div>
+<div class="glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:border-emerald-500/40 transition-all">
+<span class="material-symbols-outlined text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform">developer_board</span>
+<div class="font-display font-bold text-sm text-white">Android TV</div>
+<div class="text-[11px] text-slate-300 mt-0.5">Sony • TCL • Philips</div>
+</div>
+<div class="glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:border-emerald-500/40 transition-all">
+<span class="material-symbols-outlined text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform">live_tv</span>
+<div class="font-display font-bold text-sm text-white">Apple TV</div>
+<div class="text-[11px] text-slate-300 mt-0.5">tvOS 14 ou superior</div>
+</div>
+<div class="glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:border-emerald-500/40 transition-all">
+<span class="material-symbols-outlined text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform">cast</span>
+<div class="font-display font-bold text-sm text-white">Fire TV Stick</div>
+<div class="text-[11px] text-slate-300 mt-0.5">Amazon 4K / Lite</div>
+</div>
+<div class="glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:border-emerald-500/40 transition-all">
+<span class="material-symbols-outlined text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform">smartphone</span>
+<div class="font-display font-bold text-sm text-white">Smartphones</div>
+<div class="text-[11px] text-slate-300 mt-0.5">iPhone &amp; Android</div>
+</div>
+<div class="glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center group hover:border-emerald-500/40 transition-all">
+<span class="material-symbols-outlined text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform">laptop_mac</span>
+<div class="font-display font-bold text-sm text-white">PC &amp; Mac</div>
+<div class="text-[11px] text-slate-300 mt-0.5">Web • VLC • Windows</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING CARDS SECTION -->
+<section class="w-full py-24 relative" id="planos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Preços Transparentes em Euros</span>
+<h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">
+            Escolha o plano ideal para si
+          </h2>
+<p class="text-sm sm:text-base text-slate-300 mt-2">
+            Pague com total segurança através dos métodos nacionais: MB WAY, Referência Multibanco ou Cartão. Sem fidelização.
+          </p>
+</div>
+<!-- 3 Pricing Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+<!-- Plan 1: 1 Mês -->
+<div class="glass-panel rounded-3xl p-8 flex flex-col justify-between hover:border-white/20 transition-all">
+<div>
+<div class="mb-4">
+<span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Acesso Mensal</span>
+<h3 class="font-display font-bold text-2xl text-white mt-1">1 Mês</h3>
+<p class="text-xs text-slate-400 mt-1">Ideal para experimentar ou acompanhar um evento específico.</p>
+</div>
+<div class="my-6">
+<div class="flex items-baseline gap-1">
+<span class="font-display font-extrabold text-4xl text-white">14,99€</span>
+<span class="text-xs text-slate-400 font-medium">/ mês</span>
+</div>
+<span class="text-[11px] text-slate-400">Cobrado mensalmente sem contrato</span>
+</div>
+<ul class="space-y-3 text-sm text-slate-300 pt-2 border-t border-white/[0.06]">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Todos os canais em 4K &amp; Full HD</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Biblioteca Filmes &amp; Séries On-Demand</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Guia TV (EPG) de 7 Dias</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">1 Dispositivo simultâneo</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Suporte via WhatsApp</span>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-xl text-sm font-semibold font-display text-white bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] transition-all" href="#">
+                Subscrever 1 Mês
+              </a>
+</div>
+</div>
+<!-- Plan 2: 12 Meses (FEATURED VIP) -->
+<div class="relative glass-panel rounded-3xl p-8 flex flex-col justify-between border-2 border-emerald-500 shadow-glow-emerald bg-charcoal/90 transform lg:-translate-y-3">
+<!-- Most Popular Badge -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-emerald-500 text-white font-display font-extrabold text-xs tracking-wider uppercase shadow-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="">Recomendado • Poupe 45%</span>
+</div>
+<div>
+<div class="mb-4 pt-1">
+<span class="text-xs font-bold tracking-wider text-emerald-400 uppercase">Anual VIP</span>
+<h3 class="font-display font-bold text-2xl text-white mt-1">12 Meses</h3>
+<p class="text-xs text-slate-300 mt-1">A escolha preferida das famílias portuguesas.</p>
+</div>
+<div class="my-6">
+<div class="flex items-baseline gap-1">
+<span class="font-display font-extrabold text-4xl text-white">8,25€</span>
+<span class="text-xs text-slate-400 font-medium">/ mês</span>
+</div>
+<span class="text-xs font-semibold text-emerald-400">99,00€ faturados anualmente</span>
+</div>
+<ul class="space-y-3 text-sm text-slate-200 pt-2 border-t border-white/[0.08]">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span class="font-medium">Servidor VIP com prioridade de débito</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span class="">Todos os canais em 4K nativo &amp; 60 FPS</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span class="">Catálogo VIP Filmes &amp; Séries completo</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span class="">Anti-Freeze 9.0 dedicado</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span class="">Troca gratuita de dispositivo a qualquer altura</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span class="font-medium text-emerald-300">Apoio prioritário por WhatsApp</span>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full inline-flex items-center justify-center py-4 px-4 rounded-xl text-sm font-bold font-display text-white bg-emerald-600 hover:bg-emerald-500 shadow-glow-emerald transition-all duration-300 hover:scale-[1.02]" href="#">
+                Aderir ao Plano Anual VIP
+              </a>
+</div>
+</div>
+<!-- Plan 3: 6 Meses -->
+<div class="glass-panel rounded-3xl p-8 flex flex-col justify-between hover:border-white/20 transition-all">
+<div>
+<div class="mb-4">
+<span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Semestral</span>
+<h3 class="font-display font-bold text-2xl text-white mt-1">6 Meses</h3>
+<p class="text-xs text-slate-400 mt-1">Excelente equilíbrio de poupança e conveniência.</p>
+</div>
+<div class="my-6">
+<div class="flex items-baseline gap-1">
+<span class="font-display font-extrabold text-4xl text-white">9,99€</span>
+<span class="text-xs text-slate-400 font-medium">/ mês</span>
+</div>
+<span class="text-[11px] text-slate-400">59,99€ faturados a cada 6 meses</span>
+</div>
+<ul class="space-y-3 text-sm text-slate-300 pt-2 border-t border-white/[0.06]">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Todos os canais em 4K &amp; Full HD</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Biblioteca Filmes &amp; Séries On-Demand</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Guia TV (EPG) de 7 Dias</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Tecnologia Anti-Freeze ativada</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check</span>
+<span class="">Suporte via WhatsApp</span>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-xl text-sm font-semibold font-display text-white bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] transition-all" href="#">
+                Subscrever 6 Meses
+              </a>
+</div>
+</div>
+</div>
+<!-- Payment Badges / Trust Footnote -->
+<div class="mt-14 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-xs text-slate-400 text-center">
+<span class="inline-flex items-center gap-1.5 text-slate-300">
+<span class="material-symbols-outlined text-emerald-400 text-[16px]">lock</span>
+<span class="">Pagamento Encriptado SSL de 256 bits</span>
+</span>
+<span class="hidden sm:inline text-slate-600">•</span>
+<span class="font-semibold text-slate-200">MB WAY • Entidade e Referência Multibanco • Visa / Mastercard • Revolut</span>
+<span class="hidden sm:inline text-slate-600">•</span>
+<span class="text-emerald-400 font-semibold">Ativação Imediata</span>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION -->
+<section class="w-full py-20 bg-charcoal/20 border-t border-white/[0.06]" id="faq">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-14">
+<span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Tire as Suas Dúvidas</span>
+<h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">Perguntas Frequentes</h2>
+<p class="text-sm sm:text-base text-slate-300 mt-2">
+            Tudo o que precisa de saber de forma clara e transparente antes de começar o seu teste.
+          </p>
+</div>
+<div class="space-y-4">
+<!-- Accordion Item 1 -->
+<details class="group glass-panel rounded-2xl p-5 open:bg-charcoal/80 transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-display font-semibold text-base text-white list-none select-none">
+<span class="">O que está incluído no serviço da LusoPlay TV?</span>
+<span class="material-symbols-outlined text-emerald-400 group-open:rotate-180 transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-slate-300 leading-relaxed border-t border-white/[0.06] mt-4">
+              A subscrição dá acesso total a mais de 18.000 canais em direto (desporto nacional e internacional, canais infantis dobrados, notícias, documentários e cinema), mais de 40.000 filmes e séries on-demand com dobragem ou legendas em português de Portugal, bem como o Guia TV (EPG) de 7 dias e atualizações contínuas sem qualquer custo adicional.
+            </div>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group glass-panel rounded-2xl p-5 open:bg-charcoal/80 transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-display font-semibold text-base text-white list-none select-none">
+<span class="">Como funciona o teste grátis de 24 horas?</span>
+<span class="material-symbols-outlined text-emerald-400 group-open:rotate-180 transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-slate-300 leading-relaxed border-t border-white/[0.06] mt-4">
+              O teste grátis é 100% livre de compromissos. Não solicitamos cartão de crédito nem dados bancários para experimentar. Basta solicitar o teste no nosso formulário ou WhatsApp e receberá as credenciais e o guia passo a passo adaptado à sua televisão ou aparelho em menos de 5 minutos.
+            </div>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group glass-panel rounded-2xl p-5 open:bg-charcoal/80 transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-display font-semibold text-base text-white list-none select-none">
+<span class="">Como é feita a instalação na minha Smart TV?</span>
+<span class="material-symbols-outlined text-emerald-400 group-open:rotate-180 transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-slate-300 leading-relaxed border-t border-white/[0.06] mt-4">
+              A instalação é extremamente simples. Enviamos um guia ilustrado com fotos e texto em português. Em Smart TVs Samsung ou LG, basta descarregar uma aplicação oficial recomendada (como IBO Player ou SmartOne) diretamente da loja de apps da TV e inserir o código de utilizador que nós fornecemos.
+            </div>
+</details>
+<!-- Accordion Item 4 -->
+<details class="group glass-panel rounded-2xl p-5 open:bg-charcoal/80 transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-display font-semibold text-base text-white list-none select-none">
+<span class="">O sinal bloqueia ou congela em noites de clássico de futebol?</span>
+<span class="material-symbols-outlined text-emerald-400 group-open:rotate-180 transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-slate-300 leading-relaxed border-t border-white/[0.06] mt-4">
+              Não. Desenvolvemos o algoritmo Anti-Freeze 9.0 suportado por servidores dedicados instalados diretamente em centros de dados em Lisboa e Porto. Em noites com enorme tráfego simultâneo, o tráfego é rebalanceado em frações de milissegundo para garantir emissão ininterrupta a 60 quadros por segundo.
+            </div>
+</details>
+<!-- Accordion Item 5 -->
+<details class="group glass-panel rounded-2xl p-5 open:bg-charcoal/80 transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-display font-semibold text-base text-white list-none select-none">
+<span class="">Quais são os métodos de pagamento aceites em Portugal?</span>
+<span class="material-symbols-outlined text-emerald-400 group-open:rotate-180 transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="pt-4 text-sm text-slate-300 leading-relaxed border-t border-white/[0.06] mt-4">
+              Disponibilizamos métodos totalmente familiares e seguros para quem vive em Portugal: MB WAY (aprovação imediata por notificação no telemóvel), Referência Multibanco (emissão de Entidade e Referência pagável em qualquer caixa ou Homebanking), Cartão de Crédito/Débito (Visa, Mastercard) e Revolut.
+            </div>
+</details>
+</div>
+</div>
+</section>
+<!-- FINAL HIGH-IMPACT CONVERSION BANNER -->
+<section class="w-full py-24 relative overflow-hidden">
+<!-- Glow ambient background -->
+<div class="pointer-events-none absolute -bottom-24 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-emerald-500/15 rounded-full blur-[140px]"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="glass-panel rounded-3xl p-8 sm:p-14 text-center border border-white/[0.12] shadow-glass relative overflow-hidden">
+<!-- Micro pill -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold uppercase tracking-wider mb-6">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+<span class="">Ativação em menos de 5 minutos • Sem Cartão</span>
+</div>
+<!-- Conversion Title -->
+<h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white max-w-3xl mx-auto tracking-tight leading-tight">
+            Pronto para transformar a forma como vê televisão?
+          </h2>
+<p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mt-4 mb-8 leading-relaxed">
+            Experimente gratuitamente durante 24 horas sem qualquer compromisso. Veja os canais em 4K no seu ecrã antes de tomar qualquer decisão.
+          </p>
+<!-- Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-semibold text-base text-white bg-emerald-600 hover:bg-emerald-500 shadow-glow-emerald transition-all duration-300 hover:scale-[1.02]" href="#planos">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="">Pedir Teste Grátis de 24h</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-display font-medium text-base text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] transition-all" href="#faq">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">Falar no WhatsApp</span>
+</a>
+</div>
+<!-- Micro guarantees -->
+<div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-400 text-[16px]">check_circle</span>
+<span class="">Sem fidelização contratual</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-400 text-[16px]">check_circle</span>
+<span class="">Suporte técnico em português 365 dias/ano</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-400 text-[16px]">check_circle</span>
+<span class="">Compatível com a sua Smart TV atual</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- PROFESSIONAL FOOTER -->
+<footer class="w-full bg-charcoal border-t border-white/[0.08] pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/[0.06]">
+<!-- Col 1: Brand & Bio -->
+<div class="lg:col-span-2 space-y-4">
+<div class="h-10 flex items-center"><img src="https://lh3.googleusercontent.com/aida/AEtjO1UwZGtpFbVGzvXAXq86j8Fg38YBipIbpY6YFapytdGOfGfWac324RyG_-4V1rJqXnBZzEzGULJVKUsGlflef2Kk5xp9gmFfrBsS_OL62vkdLMSoTRcCagenUSxiOD0gWzoGPLXmuFspunnkU5jBDqHXJOdlykpiUeo5kk1Zm3IbmYl2Kq5PZS3L9yyge0Cn2V1TKzZYJuQjRg5AUnBTMaoWEmNHn7cONarCeFMVnoP40phhxB9Ow-ZQX64" alt="LusoPlay TV Logo" class="h-9 w-auto object-contain"></div>
+<p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+            A LusoPlay TV é o serviço de streaming premium de referência em Portugal. Transmissão com estabilidade garantida, milhares de canais em direto e biblioteca VOD atualizada para toda a família.
+          </p>
+<div class="flex items-center gap-4 text-xs text-slate-400 pt-2">
+<span class="inline-flex items-center gap-1 text-emerald-400">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="">Cluster Redundante Lisboa/Porto</span>
+</span>
+<span class="">•</span>
+<span class="inline-flex items-center gap-1 text-slate-300">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="">Pagamentos 100% Seguros</span>
+</span>
+</div>
+</div>
+<!-- Col 2: Produto -->
+<div class="space-y-3">
+<h4 class="font-display font-bold text-sm text-white">Produto</h4>
+<ul class="space-y-2 text-xs text-slate-400">
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#vantagens">Vantagens &amp; Tecnologia</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#dispositivos">Dispositivos Compatíveis</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Grelha de Canais 4K</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Catálogo de Filmes &amp; Séries</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Teste Grátis de 24 Horas</a></li>
+</ul>
+</div>
+<!-- Col 3: Planos & Pagamento -->
+<div class="space-y-3">
+<h4 class="font-display font-bold text-sm text-white">Planos</h4>
+<ul class="space-y-2 text-xs text-slate-400">
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Plano Mensal (1 Mês)</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Plano Semestral (6 Meses)</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Plano Anual VIP (12 Meses)</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Pagamento por MB WAY</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#planos">Multibanco &amp; Cartão</a></li>
+</ul>
+</div>
+<!-- Col 4: Suporte & Legal -->
+<div class="space-y-3">
+<h4 class="font-display font-bold text-sm text-white">Suporte &amp; Legal</h4>
+<ul class="space-y-2 text-xs text-slate-400">
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#faq">Perguntas Frequentes (FAQ)</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#faq">Suporte WhatsApp 24/7</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#">Guia de Instalação Smart TV</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#">Termos e Condições</a></li>
+<li class=""><a class="hover:text-emerald-400 transition-colors" href="#">Política de Privacidade</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Credits Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+<p class="">© 2025 LusoPlay TV Serviços de Streaming. Todos os direitos reservados. Feito com orgulho para Portugal 🇵🇹</p>
+<div class="flex items-center gap-4">
+<span class="text-slate-300">MB WAY • Multibanco • Visa • Mastercard • Revolut</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span class="text-emerald-400">4K Ultra HD • 60 FPS</span>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
