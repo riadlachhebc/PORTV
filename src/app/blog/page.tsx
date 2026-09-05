@@ -1,6 +1,7 @@
 // @ts-nocheck
 'use client';
 import { getWhatsAppUrl, WA_MESSAGES } from '@/lib/whatsapp';
+import Link from 'next/link';
 
 export default function BlogIndex() {
   return (
@@ -35,7 +36,7 @@ export default function BlogIndex() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
             
             {/*  Article 3 (Newest)  */}
-            <article className="group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
+            <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
               <div className="relative h-48 w-full overflow-hidden bg-surface-container-high flex items-center justify-center">
                 <img src="/images/blog/iptv-premium-portugal-buffering-frustracao.jpg" alt="Fã de futebol irritado com as mãos na cabeça, a olhar para uma TV com buffering" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
@@ -50,7 +51,7 @@ export default function BlogIndex() {
                     <span>23 min de leitura</span>
                   </div>
                   <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
-                    <a href="/blog/iptv-premium-portugal-vs-lista-gratis-falhas" className="focus:outline-none before:absolute before:inset-0">IPTV Premium Portugal: O Fim das Falhas e do Buffering</a>
+                    <Link href="/blog/iptv-premium-portugal-vs-lista-gratis-falhas" className="focus:outline-none before:absolute before:inset-0">IPTV Premium Portugal: O Fim das Falhas e do Buffering</Link>
                   </h3>
                   <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
                     Cansado das listas IPTV grátis que travam a meio do jogo? Descubra por que o barato sai caro e como a nossa tecnologia resolve isso.
@@ -64,7 +65,7 @@ export default function BlogIndex() {
             </article>
 
             {/*  Article 2  */}
-            <article className="group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
+            <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
               <div className="relative h-48 w-full overflow-hidden bg-surface-container-high flex items-center justify-center">
                 <img src="/images/blog/comprar-iptv-portugal-fatura-chocada.jpg" alt="Fatura de operadora chocante" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
@@ -79,7 +80,7 @@ export default function BlogIndex() {
                     <span>18 min de leitura</span>
                   </div>
                   <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
-                    <a href="/blog/comprar-iptv-portugal-poupar-fatura-tv" className="focus:outline-none before:absolute before:inset-0">Comprar IPTV Portugal: Poupe +500€/Ano na Fatura de TV</a>
+                    <Link href="/blog/comprar-iptv-portugal-poupar-fatura-tv" className="focus:outline-none before:absolute before:inset-0">Comprar IPTV Portugal: Poupe +500€/Ano na Fatura de TV</Link>
                   </h3>
                   <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
                     Cansado das faturas absurdas da MEO e NOS? Descubra por que comprar IPTV em Portugal é a melhor alternativa e poupe mais de 500€/ano.
@@ -93,7 +94,7 @@ export default function BlogIndex() {
             </article>
 
             {/*  Article 1  */}
-            <article className="group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
+            <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
               <div className="relative h-48 w-full overflow-hidden bg-surface-container-high flex items-center justify-center">
                 <img src="/images/blog/iptv-desporto-portugal-hero.jpg" alt="Adepto de futebol a ver um jogo da Liga Portugal na Smart TV com IPTV" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
@@ -108,7 +109,7 @@ export default function BlogIndex() {
                     <span>5 min de leitura</span>
                   </div>
                   <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
-                    <a href="/blog/iptv-desporto-portugal-liga-champions" className="focus:outline-none before:absolute before:inset-0">IPTV Desporto Portugal: Como Ver a Liga e a Champions Sem Bloqueios</a>
+                    <Link href="/blog/iptv-desporto-portugal-liga-champions" className="focus:outline-none before:absolute before:inset-0">IPTV Desporto Portugal: Como Ver a Liga e a Champions Sem Bloqueios</Link>
                   </h3>
                   <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
                     Cansado de pagar 56€/mês pela SportTV e DAZN? Descubra o melhor IPTV de desporto em Portugal. Futebol em 4K, sem cortes.
