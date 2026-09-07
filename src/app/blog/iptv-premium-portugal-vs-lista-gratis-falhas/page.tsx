@@ -36,54 +36,172 @@ export default function ArticlePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="w-full pt-28 pb-20 bg-surface">
         <article className="max-w-4xl mx-auto px-gutter-mobile lg:px-gutter-desktop">
-          <header className="mb-space-xl">
-            <h1 className="font-headline-xl text-headline-xl text-on-surface mb-space-md">
+          <header className="mb-10 text-center">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-emerald-400 font-label-sm text-xs uppercase tracking-widest mb-4">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Tecnologia & Estabilidade • Anti-Buffering</span>
+            </div>
+            
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-4">
               Lista IPTV Grátis vs. IPTV Premium Portugal: Porque o Grátis Sai Sempre Caro
             </h1>
-            <p className="font-body-lg text-on-surface-variant mb-space-lg">
+            
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-on-surface-variant/80 font-medium mb-6">
+              <span>Por Equipa Técnica IPTV Portugal</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Atualizado em 2026</span>
+              <span className="hidden sm:inline">•</span>
+              <span className="inline-flex items-center gap-1 text-primary">
+                <span className="material-symbols-outlined text-sm">schedule</span>
+                <span>23 min de leitura</span>
+              </span>
+            </div>
+          </header>
+
+          
+          <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+            <img loading="eager" src="/images/blog/iptv-premium-portugal-buffering-frustracao.jpg" alt="Fã de futebol irritado com as mãos na cabeça, a olhar para uma TV com buffering" className="w-full h-auto object-cover max-h-[520px]" />
+            
+          </figure>
+
+          
+          <div className="p-6 sm:p-7 rounded-2xl bg-surface-container-low border-l-4 border-primary shadow-lg mb-8">
+            <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
               Imagine o cenário: é o minuto 89 do grande derby português. O avançado ganha a bola, isola-se em frente ao guarda-redes, o estádio virtual sustém a respiração e de repente... o temido círculo de carregamento aparece no ecrã. A imagem congela. Ouviu o vizinho gritar \"Golo!\" há 5 segundos, mas você continua a olhar passivamente para a imagem travada, sentindo uma frustração imensa. Este é o pesadelo de milhares de portugueses que confiam em listas M3U da web. Validamos essa dor. Mas existe uma cura definitiva: O nosso IPTV Premium Portugal.
             </p>
-            <figure className="my-space-lg rounded-xl overflow-hidden shadow-lg">
-              <img src="/images/blog/iptv-premium-portugal-buffering-frustracao.jpg" alt="Fã de futebol irritado com as mãos na cabeça, a olhar para uma TV com buffering" className="w-full h-full object-cover" />
-            </figure>
-          </header>
+          </div>
           <div className="prose prose-lg dark:prose-invert max-w-none text-on-surface-variant">
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">A Anatomia de uma Lista IPTV Grátis (A Ilusão do M3U)</h2>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Como as listas grátis são criadas e partilhadas na internet</h3>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">⚡</span>
+              <span>A Anatomia de uma Lista IPTV Grátis (A Ilusão do M3U)</span>
+            </h2>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Como as listas grátis são criadas e partilhadas na internet</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">As listas M3U gratuitas que encontra em fóruns ou grupos de Telegram são, na esmagadora maioria, streams pirateados ou roubados temporariamente de servidores vulneráveis. São espalhadas por milhares de utilizadores num espaço de horas, resultando num colapso quase imediato.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">O ciclo de vida de uma lista grátis</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>O ciclo de vida de uma lista grátis</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">É o clássico: funciona perfeitamente à terça-feira quando ninguém está a ver, mas morre inevitavelmente ao sábado, exatamente às 20h00, quando o clássico de futebol começa e o tráfego atinge o pico.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Os perigos ocultos: Malware, roubo de dados e apps perigosas</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Os perigos ocultos: Malware, roubo de dados e apps perigosas</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">Muitas destas listas exigem a instalação de aplicações desconhecidas que escondem malware, ransomware ou rastreadores de dados, transformando a sua TV num botnet sem que se aperceba.</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Porque é que a Imagem Trava Exatamente na Hora do Jogo?</h2>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">O mito da velocidade de internet</h3>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">💰</span>
+              <span>Porque é que a Imagem Trava Exatamente na Hora do Jogo?</span>
+            </h2>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>O mito da velocidade de internet</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">A desculpa comum é: a minha internet é de 500Mbps, a culpa não é minha! E têm razão. O problema não está no download do utilizador, mas sim na capacidade de upload e de processamento do servidor que está a emitir o sinal.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Sobrecarga de Servidores</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Sobrecarga de Servidores</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">Imagine uma estrada de uma só faixa de rodagem onde de repente tentam passar 50.000 carros. É o que acontece quando milhares de utilizadores tentam aceder a um servidor grátis de baixo custo alojado no estrangeiro. Há Packet Loss maciço e o vídeo simplesmente para (o temido buffering).</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Traffic Shaping e Bloqueios de ISP</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Traffic Shaping e Bloqueios de ISP</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">As operadoras em Portugal utilizam algoritmos agressivos para limitar ativamente o tráfego (traffic shaping) vindo de IPs conhecidos por partilha grátis durante eventos em direto, estrangulando a sua ligação e causando cortes propositados.</p>
-<figure className="my-space-md rounded-xl overflow-hidden shadow-md max-w-[800px] mx-auto"><img src="/images/blog/iptv-premium-portugal-servidores-comparacao.jpg" alt="Infográfico comparando um servidor grátis a arder vs. uma rede de servidores Premium organizados" className="w-full h-full object-cover" /><figcaption className="text-center font-label-sm text-outline mt-2">A diferença fundamental de infraestrutura que elimina o buffering.</figcaption></figure>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">A Engenharia por Trás do Nosso IPTV Premium Portugal</h2>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Infraestrutura de Servidores Dedicados e Load Balancing</h3>
+<figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+              <img loading="lazy" src="/images/blog/iptv-premium-portugal-servidores-comparacao.jpg" alt="Infográfico comparando um servidor grátis a arder vs. uma rede de servidores Premium organizados" className="w-full h-auto object-cover max-h-[500px]" />
+              <figcaption className="text-center font-label-sm text-outline/80 text-xs italic py-2.5 bg-surface-container-high/60">A diferença fundamental de infraestrutura que elimina o buffering.</figcaption>
+            </figure>
+
+          {/* Mid-Article Conversion CTA Block */}
+          <div className="my-12 p-8 sm:p-10 rounded-3xl border border-primary/40 bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low text-center shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+            <div className="relative z-10 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/20 border border-primary/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                <span>⚡</span> 🛡️ TECNOLOGIA ANTI-FREEZE 9.0
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-on-surface">
+                Chega de listas grátis que morrem ao fim de semana.
+              </h3>
+              <p className="text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+                Servidores dedicados com CDN em Lisboa e Porto, balanceamento de carga e proteção contra Traffic Shaping das operadoras.
+              </p>
+              <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/precos" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-on-primary font-bold text-base hover:bg-primary-fixed hover:scale-105 transition-all shadow-[0_0_20px_rgba(37,164,117,0.3)]">
+                  <span>🚀 Comprar Subscrição IPTV</span>
+                </Link>
+                <Link href="/teste-gratis" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-surface-container-highest text-on-surface font-semibold text-base hover:bg-surface-bright transition-all border border-white/10">
+                  <span>🎁 Teste Grátis 24h</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+  
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">🏆</span>
+              <span>A Engenharia por Trás do Nosso IPTV Premium Portugal</span>
+            </h2>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Infraestrutura de Servidores Dedicados e Load Balancing</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">Ao comprar IPTV Premium Portugal, está a investir em engenharia robusta. Utilizamos sistemas de Load Balancing que distribuem os utilizadores por vários nós, garantindo que nenhum servidor fica sobrecarregado, mesmo durante um derby de alto tráfego.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Redes CDN (Content Delivery Network)</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Redes CDN (Content Delivery Network)</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">A nossa CDN garante a entrega ultrarrápida do sinal até à sua televisão, minimizando o ping e garantindo fluxo contínuo. Ao contrário das listas IPTV grátis, os dados não cruzam o mundo antes de chegar a si.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Proteção Anti-Buffering e Anti-Bloqueios das Operadoras</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Proteção Anti-Buffering e Anti-Bloqueios das Operadoras</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">O nosso serviço inclui encriptação avançada e portas dinâmicas que disfarçam o tráfego, tornando impossível para o ISP local identificar e abrandar propositadamente o seu stream através de Traffic Shaping.</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Comparação Direta: A Dor de Cabeça Gratuita vs. A Paz de Espírito Premium</h2>
-<div className="overflow-x-auto my-space-lg"><table className="min-w-full bg-surface-container-low rounded-xl overflow-hidden border border-surface-container-high text-left"><thead className="bg-surface-container-high text-on-surface"><tr><th className="py-space-sm px-space-md font-headline-sm">Característica</th><th className="py-space-sm px-space-md font-headline-sm">Lista IPTV Grátis (M3U da Web)</th><th className="py-space-sm px-space-md font-headline-sm">IPTV Premium Portugal</th></tr></thead><tbody className="divide-y divide-surface-container-high"><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface font-bold">Estabilidade no Fim-de-Semana</td><td className="py-space-sm px-space-md font-body-md text-error font-bold">Falhas constantes (Buffering)</td><td className="py-space-sm px-space-md font-body-md text-primary font-bold">99,9% Uptime (Sem cortes)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Infraestrutura</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Servidor Único Partilhado</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Redes CDN / Load Balancing</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Qualidade de Imagem</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">720p comprimido (falso HD)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">FHD e 4K Real (H.265)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Atualização de Canais</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Manual (morre a cada 3 dias)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Automática diária</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Suporte ao Cliente</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Inexistente (Fóruns anónimos)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Suporte 24/7 Dedicado</td></tr></tbody></table></div>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Falso 4K vs. 4K Real e compressão de vídeo</h3>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">🚀</span>
+              <span>Comparação Direta: A Dor de Cabeça Gratuita vs. A Paz de Espírito Premium</span>
+            </h2>
+<div className="overflow-x-auto my-8 rounded-2xl border border-white/10 shadow-2xl bg-surface-container-low">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-surface-container-high text-on-surface"><tr><th className="py-space-sm px-space-md font-headline-sm">Característica</th><th className="py-space-sm px-space-md font-headline-sm">Lista IPTV Grátis (M3U da Web)</th><th className="py-space-sm px-space-md font-headline-sm">IPTV Premium Portugal</th></tr></thead><tbody className="divide-y divide-surface-container-high"><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface font-bold">Estabilidade no Fim-de-Semana</td><td className="py-space-sm px-space-md font-body-md text-error font-bold">Falhas constantes (Buffering)</td><td className="py-space-sm px-space-md font-body-md text-primary font-bold">99,9% Uptime (Sem cortes)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Infraestrutura</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Servidor Único Partilhado</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Redes CDN / Load Balancing</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Qualidade de Imagem</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">720p comprimido (falso HD)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">FHD e 4K Real (H.265)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Atualização de Canais</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Manual (morre a cada 3 dias)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Automática diária</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Suporte ao Cliente</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Inexistente (Fóruns anónimos)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Suporte 24/7 Dedicado</td></tr></tbody>
+              </table>
+            </div>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Falso 4K vs. 4K Real e compressão de vídeo</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">As listas grátis utilizam algoritmos de compressão antigos para poupar largura de banda, resultando numa bola de futebol que parece um pixel desfocado. O nosso IPTV Premium utiliza codificação H.265 para entregar cores cristalinas e fluidez absoluta em 4K Real.</p>
-<figure className="my-space-md rounded-xl overflow-hidden shadow-md max-w-[800px] mx-auto"><img src="/images/blog/iptv-premium-portugal-qualidade-imagem.jpg" alt="Imagem de ecrã dividido - jogo pixelizado vs 4K nítido" className="w-full h-full object-cover" /><figcaption className="text-center font-label-sm text-outline mt-2">A diferença gritante entre a compressão gratuita e a codificação H.265 Premium.</figcaption></figure>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">A Psicologia do "Grátis" e o Custo do Seu Tempo</h2>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Quantas horas perde por mês à procura de novas listas?</h3>
+<figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+              <img loading="lazy" src="/images/blog/iptv-premium-portugal-qualidade-imagem.jpg" alt="Imagem de ecrã dividido - jogo pixelizado vs 4K nítido" className="w-full h-auto object-cover max-h-[500px]" />
+              <figcaption className="text-center font-label-sm text-outline/80 text-xs italic py-2.5 bg-surface-container-high/60">A diferença gritante entre a compressão gratuita e a codificação H.265 Premium.</figcaption>
+            </figure>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">📺</span>
+              <span>A Psicologia do "Grátis" e o Custo do Seu Tempo</span>
+            </h2>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Quantas horas perde por mês à procura de novas listas?</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">Pense no tempo perdido em grupos de Facebook e Telegram a caçar links M3U que vão parar de funcionar passadas 24 horas. Esse tempo tem um valor imenso. A frustração constante desgasta a sua experiência de entretenimento.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">O valor da paz de espírito</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>O valor da paz de espírito</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">A verdadeira definição de Premium é sentar no sofá, pegar no comando, ligar a TV e o sistema simplesmente funcionar. Pode convidar os seus amigos e ter a certeza absoluta que o serviço não vai falhar no momento crucial do golo.</p>
-<figure className="my-space-md rounded-xl overflow-hidden shadow-md max-w-[800px] mx-auto"><img src="/images/blog/iptv-premium-portugal-paz-de-espirito.jpg" alt="Família e amigos a sorrir e festejar um golo" className="w-full h-full object-cover" /><figcaption className="text-center font-label-sm text-outline mt-2">A paz de espírito de ver o seu desporto favorito sem quebras.</figcaption></figure>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Guia de Transição: Como Mudar do Grátis para o IPTV Premium</h2>
+<figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+              <img loading="lazy" src="/images/blog/iptv-premium-portugal-paz-de-espirito.jpg" alt="Família e amigos a sorrir e festejar um golo" className="w-full h-auto object-cover max-h-[500px]" />
+              <figcaption className="text-center font-label-sm text-outline/80 text-xs italic py-2.5 bg-surface-container-high/60">A paz de espírito de ver o seu desporto favorito sem quebras.</figcaption>
+            </figure>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">🌐</span>
+              <span>Guia de Transição: Como Mudar do Grátis para o IPTV Premium</span>
+            </h2>
 <p className="mb-space-md text-on-surface-variant">Se já tomou a decisão de acabar com as travadelas, o processo de migração é rápido e seguro. Temos também a nossa <Link href="/tutoriais-ajuda" className="text-primary hover:underline">veja o guia de configuração para Smart TV</Link> completo.</p>
-<h3 className="font-headline-md text-headline-md text-on-surface mt-space-xl mb-space-sm">Como desinstalar apps duvidosas e limpar a cache</h3>
+<h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Como desinstalar apps duvidosas e limpar a cache</span>
+            </h3>
 <p className="mb-space-md text-on-surface-variant">Antes de instalar a nossa aplicação certificada, recomendamos fortemente a remoção de players IPTV duvidosos instalados através de APKs anónimos. Vá a Definições &gt; Aplicações &gt; Limpar Cache e Desinstalar.</p>
 <p className="mb-space-md text-on-surface-variant">O IPTV (Internet Protocol Television) ou TVIP (Televisão por IP) é um método de transmissão de sinais televisivos através de redes IP. Diferentemente dos sistemas tradicionais televisivos, o IPTV oferece a capacidade de transmitir a mídia de origem continuamente.</p>
 <p className="mb-space-md text-on-surface-variant">Embora o IPTV use o protocolo da Internet, não está limitada à televisão transmitida pela internet. O IPTV é amplamente implantada em redes de telecomunicações baseadas em assinantes, com canais de acesso de alta velocidade em instalações de usuários finais, também é usada para entrega de mídia em redes corporativas e privadas.</p>
@@ -144,8 +262,26 @@ export default function ArticlePage() {
 <p className="mb-space-md text-on-surface-variant">As camadas mais próximas do topo estão logicamente mais perto do usuário, enquanto aquelas mais abaixo estão logicamente mais perto da transmissão física do dado.</p>
 <p className="mb-space-md text-on-surface-variant">Cada camada tem um protocolo de camada acima e um protocolo de camada abaixo (exceto as camadas da ponta, obviamente) que podem usar serviços de camadas anteriores ou fornecer um serviço, respectivamente.</p>
 <p className="mb-space-md text-on-surface-variant">Enxergar as camadas como fornecedores ou consumidores de serviço é um método de abstração para isolar protocolos de camadas acima dos pequenos detalhes de transmitir bits através, digamos, de ethernet, e a detecção de colisão enquanto as camadas abaixo evitam ter de conhecer os detalhes de todas as aplicações e seus protocolos.</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Frequently Asked Questions (FAQ Profundo)</h2>
-<div className="space-y-space-md"><div className="bg-surface-container rounded-xl p-space-md"><h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Porque é que a minha lista IPTV grátis funcionou bem durante uma semana e depois parou?</h3><p className="font-body-md text-on-surface-variant">As listas gratuitas são testes expirados ou acessos roubados que acabam inevitavelmente por ser desligados pelo servidor original assim que o excesso de tráfego é detetado.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">O que é o "buffering" em termos técnicos e como o IPTV Premium o resolve?</h3><p className="font-body-md text-on-surface-variant">Buffering ocorre quando o pacote de dados de vídeo sofre atrasos devido a packet loss. O nosso IPTV Premium Portugal resolve isto utilizando CDNs que criam nós locais de cache na sua região geográfica, eliminando o lag intercontinental.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Preciso de usar uma VPN com o IPTV Premium Portugal?</h3><p className="font-body-md text-on-surface-variant">Não é estritamente obrigatório graças à nossa encriptação anti-traffic shaping, mas recomendamos para total anonimato, especialmente se o seu ISP aplicar bloqueios cegos de DNS em dias de jogo.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">A mudança dos servidores DNS resolve o problema das listas grátis?</h3><p className="font-body-md text-on-surface-variant">Mudar o DNS para Google (8.8.8.8) ou Cloudflare (1.1.1.1) apenas contorna bloqueios de domínio regionais. Não aumenta a capacidade do servidor, portanto não resolve o problema das travadelas da lista grátis.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Como posso garantir que o vosso serviço Premium não vai travar no próximo clássico?</h3><p className="font-body-md text-on-surface-variant">Não precisa de acreditar apenas na nossa palavra. <Link href="/teste-gratis" className="text-primary hover:underline">solicite um teste grátis do serviço premium</Link> num dia de grande jogo e comprove a estabilidade ao vivo, antes de <Link href="/precos" className="text-primary hover:underline">descobrir os planos do nosso IPTV</Link>.</p></div></div>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">⚙️</span>
+              <span>Frequently Asked Questions (FAQ Profundo)</span>
+            </h2>
+<div className="space-y-space-md"><div className="bg-surface-container rounded-xl p-space-md"><h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Porque é que a minha lista IPTV grátis funcionou bem durante uma semana e depois parou?</span>
+            </h3><p className="font-body-md text-on-surface-variant">As listas gratuitas são testes expirados ou acessos roubados que acabam inevitavelmente por ser desligados pelo servidor original assim que o excesso de tráfego é detetado.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>O que é o "buffering" em termos técnicos e como o IPTV Premium o resolve?</span>
+            </h3><p className="font-body-md text-on-surface-variant">Buffering ocorre quando o pacote de dados de vídeo sofre atrasos devido a packet loss. O nosso IPTV Premium Portugal resolve isto utilizando CDNs que criam nós locais de cache na sua região geográfica, eliminando o lag intercontinental.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Preciso de usar uma VPN com o IPTV Premium Portugal?</span>
+            </h3><p className="font-body-md text-on-surface-variant">Não é estritamente obrigatório graças à nossa encriptação anti-traffic shaping, mas recomendamos para total anonimato, especialmente se o seu ISP aplicar bloqueios cegos de DNS em dias de jogo.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>A mudança dos servidores DNS resolve o problema das listas grátis?</span>
+            </h3><p className="font-body-md text-on-surface-variant">Mudar o DNS para Google (8.8.8.8) ou Cloudflare (1.1.1.1) apenas contorna bloqueios de domínio regionais. Não aumenta a capacidade do servidor, portanto não resolve o problema das travadelas da lista grátis.</p></div><div className="bg-surface-container rounded-xl p-space-md"><h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Como posso garantir que o vosso serviço Premium não vai travar no próximo clássico?</span>
+            </h3><p className="font-body-md text-on-surface-variant">Não precisa de acreditar apenas na nossa palavra. <Link href="/teste-gratis" className="text-primary hover:underline">solicite um teste grátis do serviço premium</Link> num dia de grande jogo e comprove a estabilidade ao vivo, antes de <Link href="/precos" className="text-primary hover:underline">descobrir os planos do nosso IPTV</Link>.</p></div></div>
 <p className="mb-space-md text-on-surface-variant">O IPTV (Internet Protocol Television) ou TVIP (Televisão por IP) é um método de transmissão de sinais televisivos através de redes IP. Diferentemente dos sistemas tradicionais televisivos, o IPTV oferece a capacidade de transmitir a mídia de origem continuamente.</p>
 <p className="mb-space-md text-on-surface-variant">Embora o IPTV use o protocolo da Internet, não está limitada à televisão transmitida pela internet. O IPTV é amplamente implantada em redes de telecomunicações baseadas em assinantes, com canais de acesso de alta velocidade em instalações de usuários finais, também é usada para entrega de mídia em redes corporativas e privadas.</p>
 <p className="mb-space-md text-on-surface-variant">Na IPTV o conteúdo é enviado apenas em streaming, porém com garantia de qualidade na entrega. O receptor é um aparelho set-top box ligado à televisão (semelhante ao aparelho da televisão a cabo ou DTH), ou até mesmo um videogame como o Xbox 360 e o PlayStation 3.</p>
@@ -165,14 +301,31 @@ export default function ArticlePage() {
 <p className="mb-space-md text-on-surface-variant">Head-end da IPTV: onde TV ao vivo e fontes AV são codificadas, criptografadas e entregues na forma de fluxos direcionados a vários IPs.</p>
 <p className="mb-space-md text-on-surface-variant">Plataforma de Vídeo on Demand (VOD): onde arquivos de vídeos on demand são armazenados e distribuídos em fluxos a IPs únicos quando um usuário realiza uma solicitação. A plataforma de VOD pode estar localizada (ou considerada parte), por vezes, nos head-ends da IPTV.</p>
 <p className="mb-space-md text-on-surface-variant">Portal interativo: permite que os usuários naveguem dentro de diferentes serviços de IPTV, como o catálogo dos vídeos sob demanda.</p>
-            <div className="mt-space-2xl p-space-xl bg-primary-container rounded-2xl text-center">
-              <p className="font-body-lg text-on-primary-container mb-space-md">
-                A vida é demasiado curta para ver jogos de futebol pixelizados e parados. O custo de um serviço IPTV Premium Portugal é absolutamente mínimo quando comparado à frustração que elimina da sua vida.
+            
+          {/* Final Bottom Conversion CTA Box (Matching the reference screenshot) */}
+          <div className="my-14 p-8 sm:p-12 rounded-3xl border border-primary/40 bg-gradient-to-b from-surface-container-high via-surface-container to-surface-container-low text-center shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+            <div className="relative z-10 space-y-4">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                <span>⚡</span> Pronto para a Nova Era da Televisão?
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight">
+                Diga Adeus Definitivo às Travadelas e Bloqueios
+              </h3>
+              <p className="text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+                Experimente a tranquilidade de ligar a televisão e ter sempre sinal estável em 4K Real. O teste de 24 horas é totalmente grátis!
               </p>
-              <Link href="/teste-gratis" className="inline-block px-space-xl py-space-md bg-primary text-on-primary font-label-lg rounded-xl hover:bg-primary-fixed transition-colors shadow-lg hover:scale-105">
-                Deixe as travadelas no passado. Peça agora o seu Teste Grátis e veja a diferença com os seus próprios olhos!
-              </Link>
+              <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/precos" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-on-primary font-bold text-base hover:bg-primary-fixed hover:scale-105 transition-all shadow-[0_0_25px_rgba(37,164,117,0.4)]">
+                  <span>🚀 Obter Subscrição IPTV</span>
+                </Link>
+                <Link href="/teste-gratis" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-surface-container-highest text-on-surface font-semibold text-base hover:bg-surface-bright transition-all border border-white/10 hover:scale-102">
+                  <span>🎁 Experimentar Teste Grátis</span>
+                </Link>
+              </div>
             </div>
+          </div>
+  
           </div>
         </article>
       </main>

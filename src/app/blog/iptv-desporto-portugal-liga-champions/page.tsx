@@ -35,27 +35,98 @@ export default function ArticlePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="w-full pt-28 pb-20 bg-surface">
         <article className="max-w-4xl mx-auto px-gutter-mobile lg:px-gutter-desktop">
-          <header className="mb-space-xl">
-            <h1 className="font-headline-xl text-headline-xl text-on-surface mb-space-md">
+          <header className="mb-10 text-center">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-emerald-400 font-label-sm text-xs uppercase tracking-widest mb-4">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Futebol & Desporto em Direto • Liga Portugal & Champions</span>
+            </div>
+            
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-4">
               IPTV Desporto Portugal: Como Ver a Liga e a Champions Sem Bloqueios
             </h1>
-            <figure className="my-space-lg rounded-xl overflow-hidden shadow-lg">
-              <img src="/images/blog/iptv-desporto-portugal-hero.jpg" alt="Adepto de futebol a ver um jogo da Liga Portugal na Smart TV com IPTV" className="w-full h-full object-cover" />
-            </figure>
+            
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-on-surface-variant/80 font-medium mb-6">
+              <span>Por Equipa Técnica IPTV Portugal</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Atualizado em 2026</span>
+              <span className="hidden sm:inline">•</span>
+              <span className="inline-flex items-center gap-1 text-primary">
+                <span className="material-symbols-outlined text-sm">schedule</span>
+                <span>5 min de leitura</span>
+              </span>
+            </div>
           </header>
+
+          
+          <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+            <img loading="eager" src="/images/blog/iptv-desporto-portugal-hero.jpg" alt="Adepto de futebol a ver um jogo da Liga Portugal na Smart TV com IPTV" className="w-full h-auto object-cover max-h-[520px]" />
+            
+          </figure>
+
+          
           <div className="prose prose-lg dark:prose-invert max-w-none text-on-surface-variant">
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">O Preço Absurdo do Futebol em Portugal (SportTV + DAZN)</h2>
-<figure className="my-space-md rounded-xl overflow-hidden shadow-md max-w-[800px] mx-auto"><img src="/images/blog/iptv-preco-futebol-portugal.jpg" alt="Fatura ou calculadora a mostrar 55,98€" className="w-full h-full object-cover" /><figcaption className="text-center font-label-sm text-outline mt-2">Comparação de custos anuais para assistir futebol em Portugal.</figcaption></figure>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">⚡</span>
+              <span>O Preço Absurdo do Futebol em Portugal (SportTV + DAZN)</span>
+            </h2>
+<figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+              <img loading="lazy" src="/images/blog/iptv-preco-futebol-portugal.jpg" alt="Fatura ou calculadora a mostrar 55,98€" className="w-full h-auto object-cover max-h-[500px]" />
+              <figcaption className="text-center font-label-sm text-outline/80 text-xs italic py-2.5 bg-surface-container-high/60">Comparação de custos anuais para assistir futebol em Portugal.</figcaption>
+            </figure>
 <p>Ser adepto de futebol e querer acompanhar a sua equipa todas as jornadas tornou-se um autêntico luxo. Com os recentes aumentos de preços implementados no verão de 2024, assinar a SportTV custa agora cerca de 34,99€ por mês. Junte a isso a DAZN (antiga Eleven Sports) por 20,99€/mês para poder ver a Liga dos Campeões, e os fãs deparam-se com um custo mensal de aproximadamente 56€ apenas para assistir a desporto na televisão.</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Porquê Escolher IPTV para Ver Futebol Online?</h2>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">💰</span>
+              <span>Porquê Escolher IPTV para Ver Futebol Online?</span>
+            </h2>
 <p>A solução moderna para contornar estes monopólios é aderir a um serviço premium de IPTV. A principal vantagem é a agregação: não precisa de saltar entre três aplicações diferentes ou pagar faturas separadas. Tem todos os canais premium reunidos numa só grelha, com qualidade de imagem 4K Real, ideal para televisores modernos.</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Canais Desporto IPTV: Tudo o Que Precisa Num Só Lugar</h2>
+
+          {/* Mid-Article Conversion CTA Block */}
+          <div className="my-12 p-8 sm:p-10 rounded-3xl border border-primary/40 bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low text-center shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+            <div className="relative z-10 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/20 border border-primary/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                <span>⚡</span> ⚡ TRANSMISSÃO 4K SEM CORTES
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-on-surface">
+                Cansado de perder lances e golos por causa de buffering?
+              </h3>
+              <p className="text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+                Acesso imediato a todos os canais desportivos premium (Sport TV, DAZN, BTV e internacionais) em 4K nativo por uma fração do preço da sua operadora.
+              </p>
+              <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/precos" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-on-primary font-bold text-base hover:bg-primary-fixed hover:scale-105 transition-all shadow-[0_0_20px_rgba(37,164,117,0.3)]">
+                  <span>🚀 Comprar Subscrição IPTV</span>
+                </Link>
+                <Link href="/teste-gratis" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-surface-container-highest text-on-surface font-semibold text-base hover:bg-surface-bright transition-all border border-white/10">
+                  <span>🎁 Teste Grátis 24h</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+  
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">🏆</span>
+              <span>Canais Desporto IPTV: Tudo o Que Precisa Num Só Lugar</span>
+            </h2>
 <p>Com a subscrição certa de canais desporto IPTV, o catálogo de entretenimento desportivo é imbatível. Esqueça ter de escolher entre a Liga Inglesa, a Liga Espanhola ou a Primeira Liga. Num único serviço, pode aceder à SportTV IPTV, DAZN IPTV, BTV e muitos outros canais internacionais exclusivos.</p>
-<div className="overflow-x-auto my-space-lg"><table className="min-w-full bg-surface-container-low rounded-xl overflow-hidden border border-surface-container-high text-left"><thead className="bg-surface-container-high text-on-surface"><tr><th className="py-space-sm px-space-md font-headline-sm">Funcionalidade</th><th className="py-space-sm px-space-md font-headline-sm">Operadoras Tradicionais</th><th className="py-space-sm px-space-md font-headline-sm">Nosso IPTV Premium</th></tr></thead><tbody className="divide-y divide-surface-container-high"><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Preço Mensal (Desporto)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">~56,00€</td><td className="py-space-sm px-space-md font-body-md text-primary font-bold">Desde 4,99€/mês (Anual)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Qualidade</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">HD / 4K (limitado a box)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">4K Real (sem cortes)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Fidelização</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">12 a 24 meses</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Sem fidelização</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Canais Incluídos</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Pagos separadamente</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Todos os canais premium num só local</td></tr></tbody></table></div>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Adeus "Travadelas": A Tecnologia por Trás de Ver Bola em Casa</h2>
-<figure className="my-space-md rounded-xl overflow-hidden shadow-md max-w-[800px] mx-auto"><img src="/images/blog/iptv-anti-buffering-tecnologia.jpg" alt="Um gráfico simples a mostrar um sinal de internet direto para a TV, ilustrando zero buffering" className="w-full h-full object-cover" /><figcaption className="text-center font-label-sm text-outline mt-2">A nossa infraestrutura de servidores garante streaming sem cortes mesmo em dias de grande pico.</figcaption></figure>
+<div className="overflow-x-auto my-8 rounded-2xl border border-white/10 shadow-2xl bg-surface-container-low">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-surface-container-high text-on-surface"><tr><th className="py-space-sm px-space-md font-headline-sm">Funcionalidade</th><th className="py-space-sm px-space-md font-headline-sm">Operadoras Tradicionais</th><th className="py-space-sm px-space-md font-headline-sm">Nosso IPTV Premium</th></tr></thead><tbody className="divide-y divide-surface-container-high"><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Preço Mensal (Desporto)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">~56,00€</td><td className="py-space-sm px-space-md font-body-md text-primary font-bold">Desde 4,99€/mês (Anual)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Qualidade</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">HD / 4K (limitado a box)</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">4K Real (sem cortes)</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Fidelização</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">12 a 24 meses</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Sem fidelização</td></tr><tr className="hover:bg-surface-container transition-colors"><td className="py-space-sm px-space-md font-body-md text-on-surface">Canais Incluídos</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Pagos separadamente</td><td className="py-space-sm px-space-md font-body-md text-on-surface-variant">Todos os canais premium num só local</td></tr></tbody>
+              </table>
+            </div>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">🚀</span>
+              <span>Adeus "Travadelas": A Tecnologia por Trás de Ver Bola em Casa</span>
+            </h2>
+<figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
+              <img loading="lazy" src="/images/blog/iptv-anti-buffering-tecnologia.jpg" alt="Um gráfico simples a mostrar um sinal de internet direto para a TV, ilustrando zero buffering" className="w-full h-auto object-cover max-h-[500px]" />
+              <figcaption className="text-center font-label-sm text-outline/80 text-xs italic py-2.5 bg-surface-container-high/60">A nossa infraestrutura de servidores garante streaming sem cortes mesmo em dias de grande pico.</figcaption>
+            </figure>
 <p>A grande queixa de quem tenta ver futebol online de forma gratuita ou através de serviços de IPTV baratos de revendedores desconhecidos é o constante buffering (travadelas).</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Contexto Histórico e Mais Detalhes sobre o Desporto Rei em Portugal</h2>
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">📺</span>
+              <span>Contexto Histórico e Mais Detalhes sobre o Desporto Rei em Portugal</span>
+            </h2>
 <p>A Primeira Liga (Liga Portugal Betclic por razões de patrocínio) é o principal escalão do sistema de ligas de futebol de Portugal. Criada na época 1934–35 pela Federação Portuguesa de Futebol, é organizada pela Liga Portuguesa de Futebol Profissional desde a temporada 1995–96. É disputada por dezoito clubes, num sistema de promoção e despromoção com a Segunda Liga.</p>
 <p>A partir da época 2023–24 a Primeira Liga tem o nome comercial de Liga Portugal Betclic devido a um acordo de patrocínio entre a casa de apostas e a Liga Portugal, fechando assim um ciclo de dois anos em que a bwin foi o principal patrocinador da prova.</p>
 <p>No final da época 2025–26 a Liga Portuguesa ocupava o 6.º lugar no ranking da UEFA, o que significa que na época seguinte o campeão e o segundo lugar têm acesso direto à Liga dos Campeões e o 3.º classificado à 3.ª pré-eliminatória da competição. Os 4.º e 5.º classificados têm acesso, respetivamente, às 2.ª pré-eliminatórias da Liga Europa e da Liga Conferência.</p>
@@ -122,16 +193,39 @@ export default function ArticlePage() {
 <p>Atualmente os canais SPORT TV são disponibilizados por três operadores nacionais: NOS, MEO e Vodafone.</p>
 <p>Desde 1998, ano do lançamento do primeiro canal, que a SPORT TV oferece uma vasta cobertura de todo o universo do desporto, transmitindo as mais importantes competições a nível nacional e internacional.</p>
 <p>Desde a época 2004/05 que a SPORT TV passou a transmitir, todas as semanas, quatro jogos da Liga portuguesa. Para além da Liga portuguesa de Futebol e da Taça de Portugal, a Sport TV transmite, em exclusivo jogos das várias ligas europeias: espanhola, alemã, francesa, italiana, holandesa, russa, belga, suíça e escocesa. Para além dos campeonatos, a SPORT TV acompanha ainda as Taças e Supertaças dos principais países europeus, entre elas a Taça de Inglaterra, Taça da Liga Inglesa, Taça do Rei, Taças da Alemanha, de Itália e da Liga Francesa.</p>
-<h2 className="font-headline-lg text-headline-lg text-on-surface mt-space-2xl mb-space-md">Frequently Asked Questions</h2>
-<div className="space-y-space-md"><div className="bg-surface-container rounded-xl p-space-md"><h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Como ver todos os jogos da Liga Portugal e Champions?</h3><p className="font-body-md text-on-surface-variant">Com um serviço de IPTV premium tem acesso num único local a todos os canais que transmitem a Liga Portugal Betclic (como a SportTV e a BTV) e a Liga dos Campeões (DAZN), sem precisar de assinar múltiplas mensalidades.</p></div></div>
-            <div className="mt-space-2xl p-space-xl bg-primary-container rounded-2xl text-center">
-              <p className="font-body-lg text-on-primary-container mb-space-md">
-                Nenhum adepto de futebol deveria ser obrigado a pagar uma fortuna mensalmente às operadoras só para ver a sua equipa. É hora de fazer a mudança inteligente e começar a poupar mais de 600€ por ano. Descubra a qualidade e a estabilidade que os nossos clientes adoram. <Link href="/teste-gratis" className="font-bold underline">peça o seu teste grátis</Link> agora!
+<h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-12 mb-6 flex items-center gap-3">
+              <span className="text-primary text-2xl">🌐</span>
+              <span>Frequently Asked Questions</span>
+            </h2>
+<div className="space-y-space-md"><div className="bg-surface-container rounded-xl p-space-md"><h3 className="text-xl font-bold text-on-surface mt-8 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+              <span>Como ver todos os jogos da Liga Portugal e Champions?</span>
+            </h3><p className="font-body-md text-on-surface-variant">Com um serviço de IPTV premium tem acesso num único local a todos os canais que transmitem a Liga Portugal Betclic (como a SportTV e a BTV) e a Liga dos Campeões (DAZN), sem precisar de assinar múltiplas mensalidades.</p></div></div>
+            
+          {/* Final Bottom Conversion CTA Box (Matching the reference screenshot) */}
+          <div className="my-14 p-8 sm:p-12 rounded-3xl border border-primary/40 bg-gradient-to-b from-surface-container-high via-surface-container to-surface-container-low text-center shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+            <div className="relative z-10 space-y-4">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                <span>⚡</span> Pronto para a Nova Era da Televisão?
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight">
+                Nunca Mais Perca um Clássico ou Noite Europeia
+              </h3>
+              <p className="text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+                Junte-se a milhares de adeptos em Portugal que já assistem à Primeira Liga e Liga dos Campeões sem bloqueios nem fidelizações.
               </p>
-              <Link href="/teste-gratis" className="inline-block px-space-xl py-space-md bg-primary text-on-primary font-label-lg rounded-xl hover:bg-primary-fixed transition-colors shadow-lg hover:scale-105">
-                Não perca o próximo derbi! Peça o seu teste grátis agora.
-              </Link>
+              <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/precos" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-on-primary font-bold text-base hover:bg-primary-fixed hover:scale-105 transition-all shadow-[0_0_25px_rgba(37,164,117,0.4)]">
+                  <span>🚀 Obter Subscrição IPTV</span>
+                </Link>
+                <Link href="/teste-gratis" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-surface-container-highest text-on-surface font-semibold text-base hover:bg-surface-bright transition-all border border-white/10 hover:scale-102">
+                  <span>🎁 Experimentar Teste Grátis</span>
+                </Link>
+              </div>
             </div>
+          </div>
+  
           </div>
         </article>
       </main>
