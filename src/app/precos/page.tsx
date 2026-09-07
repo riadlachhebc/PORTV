@@ -472,20 +472,8 @@ export default function Page() {
 </div>
 {/*  Payment Methods Grid  */}
 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
-<div className="p-4 rounded-xl bg-surface-container/70 border border-white/[0.06] hover:border-primary/30 transition-colors">
-<div className="flex items-center justify-between">
-<span className="font-bold text-white text-base">MB WAY</span>
-<span className="material-symbols-outlined text-primary text-xl">smartphone</span>
-</div>
-<p className="text-xs text-on-surface-variant mt-1.5">Aprovação imediata no telemóvel</p>
-</div>
-<div className="p-4 rounded-xl bg-surface-container/70 border border-white/[0.06] hover:border-primary/30 transition-colors">
-<div className="flex items-center justify-between">
-<span className="font-bold text-white text-base">Multibanco</span>
-<span className="material-symbols-outlined text-primary text-xl">account_balance</span>
-</div>
-<p className="text-xs text-on-surface-variant mt-1.5">Entidade e Referência oficiais</p>
-</div>
+
+
 <div className="p-4 rounded-xl bg-surface-container/70 border border-white/[0.06] hover:border-primary/30 transition-colors">
 <div className="flex items-center justify-between">
 <span className="font-bold text-white text-base">Cartões</span>
@@ -507,13 +495,7 @@ export default function Page() {
 </div>
 <p className="text-xs text-on-surface-variant mt-1.5">USDT, BTC e ETH com total privacidade</p>
 </div>
-<div className="p-4 rounded-xl bg-surface-container/70 border border-white/[0.06] hover:border-primary/30 transition-colors">
-<div className="flex items-center justify-between">
-<span className="font-bold text-white text-base">IBAN PT</span>
-<span className="material-symbols-outlined text-primary text-xl">send</span>
-</div>
-<p className="text-xs text-on-surface-variant mt-1.5">Transferência SEPA Imediata</p>
-</div>
+
 </div>
 </div>
 {/*  Right: 7-Day Moneyback Badge Card  */}
