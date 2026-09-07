@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { getWhatsAppUrl, WA_MESSAGES } from '@/lib/whatsapp';
 
@@ -40,7 +41,14 @@ export default function Header() {
           {/* Brand Logo */}
           <Link className="flex items-center gap-3 shrink-0 group focus:outline-none" href="/" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="h-10 sm:h-11 flex items-center">
-              <img src="/logo.webp" alt="IPTV Portugal TV Logo" className="h-9 w-auto object-contain" />
+              <Image
+                src="/logo.webp"
+                alt="IPTV Portugal TV Logo"
+                width={128}
+                height={72}
+                className="h-9 w-auto object-contain"
+                priority
+              />
             </div>
           </Link>
 

@@ -1,6 +1,7 @@
 // @ts-nocheck
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { getWhatsAppUrl, WA_MESSAGES } from '@/lib/whatsapp';
 
 export default function Page() {
@@ -191,7 +192,7 @@ export default function Page() {
 <div className="relative rounded-2xl bg-charcoal border border-white/[0.12] p-2 sm:p-3 shadow-glass">
 {/*  Screen Aspect Frame  */}
 <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-obsidian">
-<img alt="Benfica vs FC Porto transmissão de futebol em direto em 4K HDR com interface IPTV Portugal TV" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADQan37UAxNcMghVfHM2jKRaLQiAcNTakrXqbnqCrm1yJaDE69qku2Ip8aZP4e6dubR9A8RjK31MSzllgxrHzJu7mcFLwGqYEGeb3780JiL9XUBCgL0nozPS9k1D1mNYwgXoRRuYyAmPOKiRks89cjoLltRGF68Kcs5NYKfnLMU7-SFTsBWcD563M-7GLN4x9YA-IvsSG-o4ymA9odRj_jlSIpwlAuRpO4astbj3iCZuyDNzRiAUEM" />
+<Image alt="Benfica vs FC Porto transmissão de futebol em direto em 4K HDR com interface IPTV Portugal TV" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADQan37UAxNcMghVfHM2jKRaLQiAcNTakrXqbnqCrm1yJaDE69qku2Ip8aZP4e6dubR9A8RjK31MSzllgxrHzJu7mcFLwGqYEGeb3780JiL9XUBCgL0nozPS9k1D1mNYwgXoRRuYyAmPOKiRks89cjoLltRGF68Kcs5NYKfnLMU7-SFTsBWcD563M-7GLN4x9YA-IvsSG-o4ymA9odRj_jlSIpwlAuRpO4astbj3iCZuyDNzRiAUEM" fill sizes="(max-width: 768px) 100vw, 40vw" priority />
 {/*  Screen Subtle Gradient  */}
 <div className="absolute inset-0 bg-gradient-to-t from-obsidian/95 via-transparent to-black/60 pointer-events-none"></div>
 {/*  Top Streaming HUD Bar  */}
@@ -240,7 +241,7 @@ export default function Page() {
 {/*  Overlapping Floating Card 1: VOD Badge  */}
 <div className="absolute -bottom-6 -left-4 sm:-left-6 w-60 glass-panel p-2.5 rounded-xl shadow-glass flex items-center gap-3 z-20">
 <div className="w-12 h-16 rounded-lg overflow-hidden shrink-0 border border-white/10">
-<img alt="Poster filme VOD em português" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqsbZYsN9Jyg8I1zO43xcaNPMRxHv3QrBJtdIuxm4V3oESn_S2Zy27j0r8eKbLL6bOmI_v-qBUNpaVf5pb-hIhYRUOBt24aQgjIkpzlWfLOTmVc3p79UGv-KFfoRO5NEW_DH7FIS63oZb7khP6KK3FV32ZEfFOiQK1qUcUIMU2sQIS7aztUpuJjn1uSVfSlVAcF9Pkxjgm9QoFUjS5bA06WTnXjxrhaalyafTrxRWSqA14V5iFQ4eR" />
+<Image alt="Poster filme VOD em português" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqsbZYsN9Jyg8I1zO43xcaNPMRxHv3QrBJtdIuxm4V3oESn_S2Zy27j0r8eKbLL6bOmI_v-qBUNpaVf5pb-hIhYRUOBt24aQgjIkpzlWfLOTmVc3p79UGv-KFfoRO5NEW_DH7FIS63oZb7khP6KK3FV32ZEfFOiQK1qUcUIMU2sQIS7aztUpuJjn1uSVfSlVAcF9Pkxjgm9QoFUjS5bA06WTnXjxrhaalyafTrxRWSqA14V5iFQ4eR" width={114} height={152} />
 </div>
 <div className="min-w-0">
 <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">Estreia Exclusiva</span>
@@ -495,7 +496,8 @@ export default function Page() {
       {/* Card 1 */}
       <div className="group relative rounded-2xl bg-surface-container border border-white/10 overflow-hidden flex flex-col h-full hover:border-emerald-500/40 transition-all duration-300">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-high z-0 pointer-events-none"></div>
-        <div className="h-40 w-full bg-[url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=600&auto=format&fit=crop')] bg-cover bg-center relative z-0">
+        <div className="h-40 w-full relative z-0 overflow-hidden">
+          <Image src="/images/card-sports.jpg" alt="Desporto Premium" fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
           <div className="absolute inset-0 bg-obsidian/60 group-hover:bg-obsidian/40 transition-colors"></div>
         </div>
         <div className="p-6 relative z-10 flex-1 flex flex-col">
@@ -512,7 +514,8 @@ export default function Page() {
       {/* Card 2 */}
       <div className="group relative rounded-2xl bg-surface-container border border-white/10 overflow-hidden flex flex-col h-full hover:border-emerald-500/40 transition-all duration-300">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-high z-0 pointer-events-none"></div>
-        <div className="h-40 w-full bg-[url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=600&auto=format&fit=crop')] bg-cover bg-center relative z-0">
+        <div className="h-40 w-full relative z-0 overflow-hidden">
+          <Image src="/images/card-cinema.jpg" alt="Cinema e Séries" fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
           <div className="absolute inset-0 bg-obsidian/60 group-hover:bg-obsidian/40 transition-colors"></div>
         </div>
         <div className="p-6 relative z-10 flex-1 flex flex-col">
@@ -529,7 +532,8 @@ export default function Page() {
       {/* Card 3 */}
       <div className="group relative rounded-2xl bg-surface-container border border-white/10 overflow-hidden flex flex-col h-full hover:border-emerald-500/40 transition-all duration-300">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-high z-0 pointer-events-none"></div>
-        <div className="h-40 w-full bg-[url('https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?q=80&w=600&auto=format&fit=crop')] bg-cover bg-center relative z-0">
+        <div className="h-40 w-full relative z-0 overflow-hidden">
+          <Image src="/images/card-kids.jpg" alt="Mundo Infantil" fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
           <div className="absolute inset-0 bg-obsidian/60 group-hover:bg-obsidian/40 transition-colors"></div>
         </div>
         <div className="p-6 relative z-10 flex-1 flex flex-col">
@@ -546,7 +550,8 @@ export default function Page() {
       {/* Card 4 */}
       <div className="group relative rounded-2xl bg-surface-container border border-white/10 overflow-hidden flex flex-col h-full hover:border-emerald-500/40 transition-all duration-300">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-high z-0 pointer-events-none"></div>
-        <div className="h-40 w-full bg-[url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=600&auto=format&fit=crop')] bg-cover bg-center relative z-0">
+        <div className="h-40 w-full relative z-0 overflow-hidden">
+          <Image src="/images/card-international.jpg" alt="Canais Internacionais" fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
           <div className="absolute inset-0 bg-obsidian/60 group-hover:bg-obsidian/40 transition-colors"></div>
         </div>
         <div className="p-6 relative z-10 flex-1 flex flex-col">
@@ -1195,34 +1200,7 @@ export default function Page() {
 </div>
 </section>
 </main>
-{/*  PROFESSIONAL FOOTER  */}
-
-
-
-
-
-    <script dangerouslySetInnerHTML={{ __html: `
-      if (typeof window !== 'undefined') {
-        window.addEventListener('load', function() {
-          document.querySelectorAll('[data-onclick]').forEach(el => {
-            el.onclick = function(event) {
-              const code = el.getAttribute('data-onclick');
-              const func = new Function('event', 'button', 'this', code);
-              func.call(el, event, el, el);
-            };
-          });
-          document.querySelectorAll('[data-onsubmit]').forEach(el => {
-            el.onsubmit = function(event) {
-              event.preventDefault();
-              const code = el.getAttribute('data-onsubmit');
-              const func = new Function('event', 'this', code);
-              func.call(el, event, el);
-            };
-          });
-        });
-      }
-    `}} />
-    
     </>
+
   );
 }
