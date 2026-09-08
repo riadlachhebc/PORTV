@@ -30,10 +30,39 @@ export default function BlogIndex() {
             </div>
             <div className="flex items-center gap-space-2xs text-on-surface-variant font-label-sm text-label-sm">
               <span>A mostrar</span>
-              <span className="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">4 publicações</span>
+              <span className="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">5 publicações</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+
+              {/*  Article 6 (Newest)  */}
+              <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
+                <div className="relative h-48 w-full overflow-hidden bg-surface-container-high flex items-center justify-center">
+                  <img src="/images/blog/iptv-sem-bloqueios-hero.jpg" alt="Ecrã de televisão com o ícone de buffering a bloquear um jogo de futebol" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+                  <span className="absolute top-space-sm left-space-sm px-space-xs py-1 rounded bg-surface-container-highest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm">
+                    Guias Práticos
+                  </span>
+                </div>
+                <div className="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+                  <div className="space-y-space-xs">
+                    <div className="flex items-center gap-space-2xs text-outline font-label-sm text-label-sm">
+                      <span className="material-symbols-outlined text-sm">schedule</span>
+                      <span>21 min de leitura</span>
+                    </div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                      <Link href="/blog/iptv-sem-bloqueios-resolver-travamentos" className="focus:outline-none before:absolute before:inset-0">O Seu IPTV Está Sempre a Travar? Como Ter um IPTV Sem Bloqueios</Link>
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                      O seu IPTV está sempre a travar nos jogos de futebol? Descubra como ter um IPTV sem bloqueios em Portugal e por que a culpa não é da sua internet.
+                    </p>
+                  </div>
+                  <div className="pt-space-sm flex items-center justify-between font-label-md text-label-md text-primary">
+                    <span>Ler artigo</span>
+                    <span className="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+                  </div>
+                </div>
+              </article>
 
               {/*  Article 5 (Newest)  */}
               <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
