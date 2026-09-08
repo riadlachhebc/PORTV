@@ -30,10 +30,39 @@ export default function BlogIndex() {
             </div>
             <div className="flex items-center gap-space-2xs text-on-surface-variant font-label-sm text-label-sm">
               <span>A mostrar</span>
-              <span className="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">3 publicações</span>
+              <span className="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">4 publicações</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+
+              {/*  Article 5 (Newest)  */}
+              <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
+                <div className="relative h-48 w-full overflow-hidden bg-surface-container-high flex items-center justify-center">
+                  <img src="/images/blog/canais-portugueses-iptv-estrangeiro-hero.webp" alt="Família portuguesa na sala de estar em França a ver canais portugueses IPTV na Smart TV" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+                  <span className="absolute top-space-sm left-space-sm px-space-xs py-1 rounded bg-surface-container-highest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm">
+                    Diáspora
+                  </span>
+                </div>
+                <div className="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+                  <div className="space-y-space-xs">
+                    <div className="flex items-center gap-space-2xs text-outline font-label-sm text-label-sm">
+                      <span className="material-symbols-outlined text-sm">schedule</span>
+                      <span>21 min de leitura</span>
+                    </div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                      <Link href="/blog/canais-portugueses-iptv-estrangeiro" className="focus:outline-none before:absolute before:inset-0">Como Ver Canais Portugueses no Estrangeiro Sem Restrições</Link>
+                    </h3>
+                    <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                      Sente falta da televisão nacional? Descubra como ver canais portugueses via IPTV no estrangeiro (França, Suíça, UK) de forma fácil e sem restrições.
+                    </p>
+                  </div>
+                  <div className="pt-space-sm flex items-center justify-between font-label-md text-label-md text-primary">
+                    <span>Ler artigo</span>
+                    <span className="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+                  </div>
+                </div>
+              </article>
 
               {/*  Article 4 (Newest)  */}
               <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
