@@ -38,7 +38,7 @@ export default function BlogIndex() {
               {/*  Article 5 (Newest)  */}
               <article className="relative group flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-surface-container">
                 <div className="relative h-48 w-full overflow-hidden bg-surface-container-high flex items-center justify-center">
-                  <img src="/images/blog/canais-portugueses-iptv-estrangeiro-hero.webp" alt="Família portuguesa na sala de estar em França a ver canais portugueses IPTV na Smart TV" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src="/images/blog/canais-portugueses-iptv-estrangeiro-hero.jpg" alt="Família portuguesa na sala de estar em França a ver canais portugueses IPTV na Smart TV" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
                   <span className="absolute top-space-sm left-space-sm px-space-xs py-1 rounded bg-surface-container-highest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm">
                     Diáspora

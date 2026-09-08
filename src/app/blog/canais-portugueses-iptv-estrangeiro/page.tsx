@@ -15,7 +15,7 @@ export default function ArticlePage() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "Como Ver Canais Portugueses no Estrangeiro Sem Restrições",
-    "image": "https://iptvportugaltv.net/images/blog/canais-portugueses-iptv-estrangeiro-hero.webp",
+    "image": "https://iptvportugaltv.net/images/blog/canais-portugueses-iptv-estrangeiro-hero.jpg",
     "datePublished": "2026-09-08T08:00:00+01:00",
     "dateModified": "2026-09-08T08:00:00+01:00",
     "author": { "@type": "Organization", "name": "Equipa Técnica IPTV Portugal" },
@@ -76,10 +76,10 @@ export default function ArticlePage() {
   <span className="text-primary text-2xl">📺</span>
   <span>A Saudade da Nossa Televisão (A Comunidade na Diáspora)</span>
 </h2>
-<!-- IMAGE: canais-portugueses-iptv-estrangeiro-hero.webp -->
+<!-- IMAGE: canais-portugueses-iptv-estrangeiro-hero.jpg -->
 <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
   <img 
-    src="/images/blog/canais-portugueses-iptv-estrangeiro-hero.webp" 
+    src="/images/blog/canais-portugueses-iptv-estrangeiro-hero.jpg" 
     alt="Família portuguesa na sala de estar em França a ver canais portugueses IPTV na Smart TV" 
     className="w-full h-auto object-cover max-h-[520px]" 
     loading="lazy" 
@@ -149,10 +149,10 @@ export default function ArticlePage() {
   <span className="text-primary text-2xl">🚧</span>
   <span>O Problema do Bloqueio Geográfico (Geoblocking)</span>
 </h2>
-<!-- IMAGE: canais-portugueses-iptv-geoblocking.webp -->
+<!-- IMAGE: canais-portugueses-iptv-geoblocking.jpg -->
 <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
   <img 
-    src="/images/blog/canais-portugueses-iptv-geoblocking.webp" 
+    src="/images/blog/canais-portugueses-iptv-geoblocking.jpg" 
     alt="Ecrã de telemóvel a mostrar mensagem de conteúdo bloqueado na sua região devido ao geoblocking da RTP Play e NOS TV" 
     className="w-full h-auto object-cover max-h-[520px]" 
     loading="lazy" 
@@ -250,10 +250,10 @@ export default function ArticlePage() {
   <span className="text-primary text-2xl">🚀</span>
   <span>Canais Portugueses IPTV: A Solução Definitiva</span>
 </h2>
-<!-- IMAGE: canais-portugueses-iptv-smart-tv.webp -->
+<!-- IMAGE: canais-portugueses-iptv-smart-tv.jpg -->
 <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
   <img 
-    src="/images/blog/canais-portugueses-iptv-smart-tv.webp" 
+    src="/images/blog/canais-portugueses-iptv-smart-tv.jpg" 
     alt="Smart TV moderna com um menu de canais IPTV com canais abertos portugueses e desporto em França" 
     className="w-full h-auto object-cover max-h-[520px]" 
     loading="lazy" 
