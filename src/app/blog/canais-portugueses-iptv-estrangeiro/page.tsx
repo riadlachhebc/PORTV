@@ -76,7 +76,7 @@ export default function ArticlePage() {
   <span className="text-primary text-2xl">📺</span>
   <span>A Saudade da Nossa Televisão (A Comunidade na Diáspora)</span>
 </h2>
-<!-- IMAGE: canais-portugueses-iptv-estrangeiro-hero.jpg -->
+{/* IMAGE: canais-portugueses-iptv-estrangeiro-hero.jpg */}
 <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
   <img 
     src="/images/blog/canais-portugueses-iptv-estrangeiro-hero.jpg" 
@@ -149,7 +149,7 @@ export default function ArticlePage() {
   <span className="text-primary text-2xl">🚧</span>
   <span>O Problema do Bloqueio Geográfico (Geoblocking)</span>
 </h2>
-<!-- IMAGE: canais-portugueses-iptv-geoblocking.jpg -->
+{/* IMAGE: canais-portugueses-iptv-geoblocking.jpg */}
 <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
   <img 
     src="/images/blog/canais-portugueses-iptv-geoblocking.jpg" 
@@ -250,7 +250,7 @@ export default function ArticlePage() {
   <span className="text-primary text-2xl">🚀</span>
   <span>Canais Portugueses IPTV: A Solução Definitiva</span>
 </h2>
-<!-- IMAGE: canais-portugueses-iptv-smart-tv.jpg -->
+{/* IMAGE: canais-portugueses-iptv-smart-tv.jpg */}
 <figure className="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-surface-container-low">
   <img 
     src="/images/blog/canais-portugueses-iptv-smart-tv.jpg" 
